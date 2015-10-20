@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A670338C-2ACC-DF45-CA12-4591978A54BD" name="F15.C4Status">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-19 21:29:01 UTC</createdTime>
+<ownerDesignName>reflog</ownerDesignName>
+<engineerTo>
+<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="status_id" id="25885B22-566A-B423-B1EF-E8907F20A94D">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-19 21:29:12 UTC</createdTime>
+<ownerDesignName>reflog</ownerDesignName>
+<engineerTo>
+<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F0B4482E-45D6-0E53-A258-4EBDB84B03B2" name="RFE_Contacts">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-19 20:55:11 UTC</createdTime>
+<ownerDesignName>reflog</ownerDesignName>
+<engineerTo>
+<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+</Entity>

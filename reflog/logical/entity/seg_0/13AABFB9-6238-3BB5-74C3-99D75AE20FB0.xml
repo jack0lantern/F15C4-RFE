@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="13AABFB9-6238-3BB5-74C3-99D75AE20FB0" name="F15.C4Document">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-19 22:02:09 UTC</createdTime>
+<ownerDesignName>reflog</ownerDesignName>
+<engineerTo>
+<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="document_id" id="00A4CE1F-9CB6-BA44-9F0F-B0D6B758C010">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-19 22:02:21 UTC</createdTime>
+<ownerDesignName>reflog</ownerDesignName>
+<engineerTo>
+<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_id" id="2C8B7E96-3522-0D32-A733-ECD85812BB47">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-19 22:03:17 UTC</createdTime>
+<generatorID>BCFA8023-EA61-3B27-5999-25670978AC56</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<engineerTo>
+<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+</engineerTo>
+<referedAttribute>CC987ECE-0CEF-AEE4-C648-F7FF47544194</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7482E720-1A5C-17B1-B0EF-120174E8CA87" name="F15.C4Document PK">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-19 22:02:29 UTC</createdTime>
+<ownerDesignName>reflog</ownerDesignName>
+<engineerTo>
+<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>00A4CE1F-9CB6-BA44-9F0F-B0D6B758C010</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
