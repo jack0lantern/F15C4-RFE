@@ -15,4 +15,72 @@
 <targetEntity>C82616D0-2E11-F6B3-69CC-9BF27BF9A3BD</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="Contact" id="E849176A-E3E6-57C2-25D6-CFA0F160EADA">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-21 22:36:25 UTC</createdTime>
+<ownerDesignName>reflog</ownerDesignName>
+<engineerTo>
+<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+<attribute name="effective_date" id="CBAFB66D-FA87-98D3-E63F-655B9D0B4BF6">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-21 22:38:01 UTC</createdTime>
+<ownerDesignName>reflog</ownerDesignName>
+<engineerTo>
+<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</attribute>
+<attribute name="comments" id="D64B1EC8-E755-C52D-75BE-88C6FA9EBC9D">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-21 22:38:35 UTC</createdTime>
+<ownerDesignName>reflog</ownerDesignName>
+<engineerTo>
+<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</attribute>
+<attribute name="role_type" id="2222B286-27E8-5006-6BB1-B2F68327D451">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-21 22:39:44 UTC</createdTime>
+<ownerDesignName>reflog</ownerDesignName>
+<engineerTo>
+<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</attribute>
+<attribute name="role_description" id="C635A797-B8B3-DA91-0B58-C480FB2A5C42">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-21 22:40:02 UTC</createdTime>
+<ownerDesignName>reflog</ownerDesignName>
+<engineerTo>
+<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
 </Relation>
