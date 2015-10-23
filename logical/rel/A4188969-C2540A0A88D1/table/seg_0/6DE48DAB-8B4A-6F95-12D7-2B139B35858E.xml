@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6DE48DAB-8B4A-6F95-12D7-2B139B35858E" name="F15.C4Project">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-23 01:00:54 UTC</createdTime>
+<generatorID>6EDB3561-65A1-CE6F-CA1D-D62202A3BB11</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="project_id" id="4E4D4744-DB6B-F3EB-4FB7-C386B52DBC8D">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-23 01:00:54 UTC</createdTime>
+<generatorID>CB712B0A-BC05-0990-F695-2AFB1419CA73</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15.C4Lab_lab_id" id="AB2D1C3A-3035-7BAA-D83C-12392906B40A">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-23 01:00:54 UTC</createdTime>
+<generatorID>8DB54B5A-009C-AE67-7328-FF2B3A9FC728</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="47B1EEDA-A516-5988-DDC8-E877B869362E" referredColumn="C0D8873D-E343-5292-E50E-2927137945D9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="764BF854-8116-25B7-D82E-9DE4D62B8B39" name="F15.C4Project_F15.C4Lab_FK">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-23 01:00:54 UTC</createdTime>
+<generatorID>4640AB03-C03C-5EB5-B4FB-4AD6384FCC0A</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB2D1C3A-3035-7BAA-D83C-12392906B40A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

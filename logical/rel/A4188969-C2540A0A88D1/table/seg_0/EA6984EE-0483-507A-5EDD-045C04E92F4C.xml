@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EA6984EE-0483-507A-5EDD-045C04E92F4C" name="Contactv1">
+<createdBy>karthik</createdBy>
+<createdTime>2015-10-23 18:35:57 UTC</createdTime>
+<generatorID>FED84B83-0202-6BE3-63AD-4707306C048A</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="F15.C4RFE_rfe_id" id="0B547CF4-D3D4-BAB8-73CF-855C736C3A34">
+<createdBy>karthik</createdBy>
+<createdTime>2015-10-23 18:35:57 UTC</createdTime>
+<generatorID>E7610FDC-111E-7AC2-678A-F7486B280C17</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="284DA655-3792-05B1-5CB0-8C046C9D9FD6" referredColumn="52C9D8CE-262D-2FB7-5B9E-C3A4C0D19DE2"/>
+</associations>
+</Column>
+<Column name="F15.C4Employee_employee_id" id="762F862E-11AC-68CA-1D87-DF7D5B5A1C82">
+<createdBy>karthik</createdBy>
+<createdTime>2015-10-23 18:35:57 UTC</createdTime>
+<generatorID>9FE5FB88-D7D2-D065-107E-1F8C2D6C8452</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="06CD6975-D2CC-C7EC-A3B9-F475D14BF745" referredColumn="9B7BB71C-0009-70F3-FCCB-AEE41AE2DFF1"/>
+</associations>
+</Column>
+<Column name="effective_date" id="0F4FD436-FC19-C121-7F3B-5F3AFE3D28C1">
+<createdBy>karthik</createdBy>
+<createdTime>2015-10-23 18:35:57 UTC</createdTime>
+<generatorID>08851141-88F4-5A8B-3758-1153F7D4C965</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comments" id="E838D9F9-B3F2-C50F-719A-03658B543F3C">
+<createdBy>karthik</createdBy>
+<createdTime>2015-10-23 18:35:57 UTC</createdTime>
+<generatorID>D9A9E765-5923-B7EC-3C59-EDCC74B3D2FB</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="role_type" id="7953FDD3-E4CD-0C6E-F28C-5675C5DC29E5">
+<createdBy>karthik</createdBy>
+<createdTime>2015-10-23 18:35:57 UTC</createdTime>
+<generatorID>CB8A745F-F0C9-3EA8-F1D7-A28824554B88</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="role_description" id="878DFBFE-F027-41E6-029C-3E1698608B41">
+<createdBy>karthik</createdBy>
+<createdTime>2015-10-23 18:35:57 UTC</createdTime>
+<generatorID>440E1786-6216-31E3-3A6B-C93A89976C63</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="83D011CF-72EA-8B6F-561B-32B226C24A91" name="Contactv1_PK">
+<createdBy>karthik</createdBy>
+<createdTime>2015-10-23 18:35:57 UTC</createdTime>
+<generatorID>DEB410C6-4722-13E7-0D4F-A0784078EA04</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B547CF4-D3D4-BAB8-73CF-855C736C3A34"/>
+<colUsage columnID="762F862E-11AC-68CA-1D87-DF7D5B5A1C82"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="04EA25A4-93E0-21CC-2BC6-78DB07047280" name="Contactv1_F15.C4RFE_FK">
+<createdBy>karthik</createdBy>
+<createdTime>2015-10-23 18:35:57 UTC</createdTime>
+<generatorID>F3F9C4D4-5B0F-7B36-8E0F-EA12C61F7007</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B547CF4-D3D4-BAB8-73CF-855C736C3A34"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FCD47016-C761-BC20-BD05-2D42E71E92A9" name="Contactv1_F15.C4Employee_FK">
+<createdBy>karthik</createdBy>
+<createdTime>2015-10-23 18:35:57 UTC</createdTime>
+<generatorID>F9DCE3D5-A0B0-DFBE-8468-88C6B7B70A0F</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="762F862E-11AC-68CA-1D87-DF7D5B5A1C82"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

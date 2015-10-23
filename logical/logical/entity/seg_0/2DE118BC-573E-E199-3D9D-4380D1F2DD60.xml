@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2DE118BC-573E-E199-3D9D-4380D1F2DD60" name="F15.C4Comment">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-19 21:32:02 UTC</createdTime>
+<ownerDesignName>reflog</ownerDesignName>
+<engineerTo>
+<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="comment_id" id="F93605CC-8E1F-C23B-3C12-8D8F7046B7EE">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-19 21:32:11 UTC</createdTime>
+<ownerDesignName>reflog</ownerDesignName>
+<engineerTo>
+<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_id" id="00296F73-4946-967C-AD11-E345A0909428">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-19 21:33:04 UTC</createdTime>
+<generatorID>03ACF512-3736-9CC2-96EC-8249968A8272</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<engineerTo>
+<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>CC987ECE-0CEF-AEE4-C648-F7FF47544194</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="73125DA9-D1FE-78E3-4745-6ED6323C6CE6" name="F15.C4Comments PK">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-19 21:32:24 UTC</createdTime>
+<ownerDesignName>reflog</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F93605CC-8E1F-C23B-3C12-8D8F7046B7EE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

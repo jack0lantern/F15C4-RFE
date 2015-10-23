@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FED84B83-0202-6BE3-63AD-4707306C048A" name="Contact">
+<createdBy>karthik</createdBy>
+<createdTime>2015-10-23 18:29:55 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rfe_id" id="E7610FDC-111E-7AC2-678A-F7486B280C17">
+<createdBy>karthik</createdBy>
+<createdTime>2015-10-23 18:30:11 UTC</createdTime>
+<generatorID>F3F9C4D4-5B0F-7B36-8E0F-EA12C61F7007</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+</engineerTo>
+<referedAttribute>CC987ECE-0CEF-AEE4-C648-F7FF47544194</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="employee_id" id="9FE5FB88-D7D2-D065-107E-1F8C2D6C8452">
+<createdBy>karthik</createdBy>
+<createdTime>2015-10-23 18:30:21 UTC</createdTime>
+<generatorID>F9DCE3D5-A0B0-DFBE-8468-88C6B7B70A0F</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+</engineerTo>
+<referedAttribute>2EEFD974-4BB7-1A23-8D92-19E384716024</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="effective_date" id="08851141-88F4-5A8B-3758-1153F7D4C965">
+<createdBy>karthik</createdBy>
+<createdTime>2015-10-23 18:31:53 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="comments" id="D9A9E765-5923-B7EC-3C59-EDCC74B3D2FB">
+<createdBy>karthik</createdBy>
+<createdTime>2015-10-23 18:32:08 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="role_type" id="CB8A745F-F0C9-3EA8-F1D7-A28824554B88">
+<createdBy>karthik</createdBy>
+<createdTime>2015-10-23 18:32:20 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="role_description" id="440E1786-6216-31E3-3A6B-C93A89976C63">
+<createdBy>karthik</createdBy>
+<createdTime>2015-10-23 18:34:06 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DEB410C6-4722-13E7-0D4F-A0784078EA04" name="Contact PK">
+<createdBy>karthik</createdBy>
+<createdTime>2015-10-23 18:34:47 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E7610FDC-111E-7AC2-678A-F7486B280C17</attributeRef>
+<attributeRef>9FE5FB88-D7D2-D065-107E-1F8C2D6C8452</attributeRef>
+<attributeRef>E7610FDC-111E-7AC2-678A-F7486B280C17</attributeRef>
+<attributeRef>9FE5FB88-D7D2-D065-107E-1F8C2D6C8452</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
