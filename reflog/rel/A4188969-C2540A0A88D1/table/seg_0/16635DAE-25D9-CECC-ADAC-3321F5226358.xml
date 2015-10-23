@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="16635DAE-25D9-CECC-ADAC-3321F5226358" name="F15.C4RFE">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-23 01:00:54 UTC</createdTime>
+<generatorID>82188C37-C2CF-26B3-7637-BBC0B1D109C9</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="rfe_id" id="52C9D8CE-262D-2FB7-5B9E-C3A4C0D19DE2">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-23 01:00:54 UTC</createdTime>
+<generatorID>CC987ECE-0CEF-AEE4-C648-F7FF47544194</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_id" id="2AA0A5EC-A1B8-277B-BD8E-C56A659C44E4">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-23 01:00:54 UTC</createdTime>
+<generatorID>0D678ADE-2673-6BD0-8566-5BEB3E919ED3</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_id" id="3CA1B2A0-B417-61CB-C9F9-68B9ABE1AC76">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-23 01:00:54 UTC</createdTime>
+<generatorID>D695E0F5-D03B-9510-863B-03F14A08ADBC</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15.C4Status_F15.C4Status_ID" id="1EC18B95-08F0-73C5-D2B7-95E44F55501F">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-23 01:00:54 UTC</createdTime>
+<ownerDesignName>reflog</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AA03A6D3-E4F7-3F7E-DD48-C9E13D405A7C" referredColumn="EC61136C-B7B8-9CA9-8934-551B2378CE03"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B92C3225-0A00-E4FD-23E6-235FAD9F1292" name="F15.C4RFE_PK">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-23 01:00:54 UTC</createdTime>
+<generatorID>595FF1E6-CE46-BE2B-E6BE-FBA4BCE352D8</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="52C9D8CE-262D-2FB7-5B9E-C3A4C0D19DE2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="16220A22-E430-634C-F5BB-23D8FBA30EAE" name="F15.C4RFE_F15.C4Status_FK">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-23 01:00:54 UTC</createdTime>
+<generatorID>ABCD779E-A937-1956-6853-E545478E4B3D</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1EC18B95-08F0-73C5-D2B7-95E44F55501F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

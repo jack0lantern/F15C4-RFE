@@ -1,0 +1,203 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4B21AEF0-CB8E-D1DE-F61B-E113984CB34C" name="F15.C4Employee">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-23 01:00:54 UTC</createdTime>
+<generatorID>C82616D0-2E11-F6B3-69CC-9BF27BF9A3BD</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="employee_id" id="9B7BB71C-0009-70F3-FCCB-AEE41AE2DFF1">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-23 01:00:54 UTC</createdTime>
+<generatorID>2EEFD974-4BB7-1A23-8D92-19E384716024</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="active" id="311F886F-A452-66A6-5570-0EC37419CFED">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-23 01:00:54 UTC</createdTime>
+<generatorID>BB091965-DF76-72B5-8A7E-77E7018ABD6D</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_name" id="88EB85EC-9268-D25F-64A1-D7D7EFA61012">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-23 01:00:54 UTC</createdTime>
+<generatorID>359AE748-8387-425A-8972-18A61ADDB1C7</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_lab" id="CF5C3472-9776-56E3-3536-BFC24809A575">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-23 01:00:54 UTC</createdTime>
+<generatorID>BD25184F-4BAD-4EAD-CECC-DC8D9987D502</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_email" id="8CB743C4-B55E-47F2-C1A1-FF3132703065">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-23 01:00:54 UTC</createdTime>
+<generatorID>8AB710AB-F3BD-6140-8067-0247A5C3A867</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_office" id="B5B50AD8-DDE5-D1CD-1ACB-BD4052787336">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-23 01:00:54 UTC</createdTime>
+<generatorID>9BCF75FF-C0FE-632E-48FE-F3626237D1D4</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_phone" id="A00EE1E9-EDB0-6FDB-961A-5DB094F37A74">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-23 01:00:54 UTC</createdTime>
+<generatorID>CBDB7294-B5E8-1E59-A424-A52CF9565A4D</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_eff_date" id="29B13A0D-59A7-16DA-97A0-382FD1A7D76A">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-23 01:00:54 UTC</createdTime>
+<generatorID>9AE4CD3A-581A-21DD-B7BA-A7C019A64610</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="system_admin_flag" id="2EE54D9A-69E0-A910-881A-15024F227856">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-23 01:00:54 UTC</createdTime>
+<generatorID>22EC5096-6C7F-7683-E805-7FE4CE50E591</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lab_director_flag" id="4F68DDAB-F220-7A81-8F60-B45F5B692C98">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-23 01:00:54 UTC</createdTime>
+<generatorID>48EDA20B-4C40-EF2E-1A71-2A27243026AD</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="exec_director_flag" id="75632B3D-5237-5359-F4A6-338316FB2E8A">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-23 01:00:54 UTC</createdTime>
+<generatorID>D9FA2139-8910-1F5B-BE2B-0849067DAD0E</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="chairperson_flag" id="BBBC4CC6-2A03-8F13-A711-09AC41624A46">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-23 01:00:54 UTC</createdTime>
+<generatorID>92D99EBA-F8D5-B8BA-E1E4-D2FF02ECC7E6</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15.C4Lab_lab_id" id="561EC8FC-44C4-6283-687A-A2EC84F62556">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-23 01:00:54 UTC</createdTime>
+<generatorID>3FBC8D12-141A-189E-9C01-B8853C0EA6AC</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DFB4EF08-3681-4F7A-2C50-8D44515539F5" referredColumn="C0D8873D-E343-5292-E50E-2927137945D9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DDF0BF72-D9B9-1854-A1A5-DF03072F2506" name="F15.C4Employee_PK">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-23 01:00:54 UTC</createdTime>
+<generatorID>D3047B70-2784-52CF-D204-CC42F92FBEBB</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9B7BB71C-0009-70F3-FCCB-AEE41AE2DFF1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4CC62AFF-260A-0E32-3F7A-F1F000613E7B" name="F15.C4Employee_PKv1">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-23 01:00:54 UTC</createdTime>
+<generatorID>A37EF8D0-B7CE-5633-0C06-CFBF4DDC1349</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="F581EDBE-90EE-6712-803D-5678276CDE17" name="F15.C4Employee_F15.C4Lab_FK">
+<createdBy>Jack</createdBy>
+<createdTime>2015-10-23 01:00:54 UTC</createdTime>
+<generatorID>8074F11E-E9CF-A968-775B-75D2530D3DA2</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="561EC8FC-44C4-6283-687A-A2EC84F62556"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
