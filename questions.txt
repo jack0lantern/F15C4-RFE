@@ -1,0 +1,8 @@
+Can an employee be a part of multiple labs?
+
+Are status descriptions, role descriptions mandatory?
+
+Is there employee type specific data we need to maintain in our tables?
+
+Can an employee hold multiple titles?
+
