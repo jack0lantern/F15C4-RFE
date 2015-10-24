@@ -168,7 +168,7 @@ SELECT
     exec_director_flag,
     chairperson_flag,
     lab_id
-FROM F15C4Emp where lab_id IS NOT NULL;
+FROM F15C4Emp where F15C4Lab_lab_id IS NOT NULL;
 
 create or replace TRIGGER F15C4Lab_Employee_trigger
      INSTEAD OF insert ON F15C4Lab_Employee_view
