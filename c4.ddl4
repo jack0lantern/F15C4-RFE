@@ -167,7 +167,7 @@ SELECT
     lab_director_flag,
     exec_director_flag,
     chairperson_flag,
-    lab_id
+    F15C4Lab_lab_id
 FROM F15C4Emp where F15C4Lab_lab_id IS NOT NULL;
 
 create or replace TRIGGER F15C4Lab_Employee_trigger
@@ -187,7 +187,7 @@ BEGIN
 		    lab_director_flag,
 		    exec_director_flag,
 		    chairperson_flag,
-		    lab_id)
+		    F15C4Lab_lab_id)
 		 VALUES ( 
 		:NEW.emp_id,
 		:NEW.active,
@@ -201,7 +201,7 @@ BEGIN
 		:NEW.lab_director_flag,
 		:NEW.exec_director_flag,
 		:NEW.chairperson_flag,
-		:NEW.lab_id) ;
+		:NEW.F15C4Lab_lab_id) ;
 END;
 /
 
@@ -219,7 +219,7 @@ SELECT
     lab_director_flag,
     exec_director_flag,
     chairperson_flag,
-    lab_id
+    F15C4Lab_lab_id
 FROM F15C4Emp where lab_director_flag = 1;
 
 create or replace TRIGGER F15C4Lab_Director_trigger
@@ -239,7 +239,7 @@ BEGIN
 		    lab_director_flag,
 		    exec_director_flag,
 		    chairperson_flag,
-		    lab_id)
+		    F15C4Lab_lab_id)
 		 VALUES ( 
 		:NEW.emp_id,
 		'Lab_Director',
@@ -254,7 +254,7 @@ BEGIN
 		1,
 		:NEW.exec_director_flag,
 		:NEW.chairperson_flag,
-		:NEW.lab_id) ;
+		:NEW.F15C4Lab_lab_id) ;
 END;
 /
 
@@ -272,7 +272,7 @@ SELECT
     lab_director_flag,
     exec_director_flag,
     chairperson_flag,
-    lab_id
+    F15C4Lab_lab_id
 FROM F15C4Emp where system_admin_flag = 1;
 
 create or replace TRIGGER F15C4Lab_SysAd_trigger
@@ -292,7 +292,7 @@ BEGIN
 		    lab_director_flag,
 		    exec_director_flag,
 		    chairperson_flag,
-		    lab_id)
+		    F15C4Lab_lab_id)
 		 VALUES ( 
 		:NEW.emp_id,
 		:NEW.active,
@@ -306,6 +306,6 @@ BEGIN
 		:NEW.lab_director_flag,
 		:NEW.exec_director_flag,
 		:NEW.chairperson_flag,
-		:NEW.lab_id) ;
+		:NEW.F15C4Lab_lab_id) ;
 END;
 /
