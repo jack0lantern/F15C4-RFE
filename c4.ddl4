@@ -1,7 +1,7 @@
 drop view F15C4Emp_view ;
 drop view F15C4Chairperson_view ;
-drop view F15C4Executive_Director_view ;
-drop view F15C4Lab_System_Adminstrator_view ;
+drop view F15C4Exec_D_view ;
+drop view F15C4Lab_SysAd_view ;
 drop view F15C4Lab_Director_view ;
 drop view F15C4Lab_Employee_view ;
 drop view F15C4Requestor_view ;
@@ -110,7 +110,7 @@ BEGIN
 END;
 /
 
-create view F15C4Executive_Director_view as
+create view F15C4Exec_D_view as
 SELECT 
     emp_id,
     type,
@@ -127,8 +127,8 @@ SELECT
     chairperson_flag
 FROM F15C4Emp where type = 'Executive Director' ;
 
-create or replace TRIGGER F15C4Executive_Director_trigger
-     INSTEAD OF insert ON F15C4Executive_Director_view
+create or replace TRIGGER F15C4Exec_D_trigger
+     INSTEAD OF insert ON F15C4Exec_D_view
      FOR EACH ROW
 BEGIN
     insert into F15C4Emp( 
@@ -327,7 +327,7 @@ BEGIN
 END;
 /
 
-create view F15C4Lab_System_Administrator_view as
+create view F15C4Lab_SysAd_view as
 SELECT 
     emp_id,
     type,
@@ -345,8 +345,8 @@ SELECT
     lab_id
 FROM F15C4Emp where type = 'Lab System Administrator';
 
-create or replace TRIGGER F15C4Lab_System_Administrator_trigger
-     INSTEAD OF insert ON F15C4Lab_System_Administrator_view
+create or replace TRIGGER F15C4Lab_SysAd_trigger
+     INSTEAD OF insert ON F15C4Lab_SysAd_view
      FOR EACH ROW
 BEGIN
     insert into F15C4Emp( 
