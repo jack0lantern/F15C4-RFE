@@ -242,7 +242,6 @@ BEGIN
 		    F15C4Lab_lab_id)
 		 VALUES ( 
 		:NEW.emp_id,
-		'Lab_Director',
 		:NEW.active,
 		:NEW.emp_name, 
 		:NEW.emp_lab,
