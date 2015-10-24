@@ -184,6 +184,21 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="lab_id1" id="BE9AD22A-D7C0-76E6-2884-4E4E34B3AFB7">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-24 20:30:18 UTC</createdTime>
+<generatorID>CC9D2F1D-83DC-5710-15B1-00DDF6A2CAD9</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>B6DA3D23-4A13-CCB9-D82F-A28C9AD2B6C9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="D3047B70-2784-52CF-D204-CC42F92FBEBB" name="F15.C4Employees PK">

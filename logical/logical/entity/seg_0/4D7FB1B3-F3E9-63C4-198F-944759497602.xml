@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4D7FB1B3-F3E9-63C4-198F-944759497602" name="r3">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-24 20:31:09 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rfe_id" id="62725181-3A3E-2F60-E1BF-C65400632519">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-24 20:31:09 UTC</createdTime>
+<generatorID>F3F9C4D4-5B0F-7B36-8E0F-EA12C61F7007</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_id" id="262DF286-5546-2CA3-A130-48A063DBB828">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-24 20:31:09 UTC</createdTime>
+<generatorID>F9DCE3D5-A0B0-DFBE-8468-88C6B7B70A0F</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_id1" id="608C6687-949F-5D68-C195-632FE2792C1D">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-24 20:32:32 UTC</createdTime>
+<generatorID>BCDD0588-A86A-A812-3AEC-4045B31B921F</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+</engineerTo>
+<referedAttribute>CC987ECE-0CEF-AEE4-C648-F7FF47544194</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_id1" id="031777A7-4C53-26E3-CEF1-870C67567DE7">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-24 20:33:09 UTC</createdTime>
+<generatorID>079E7A67-892F-FF46-64F1-2E16AF5B85D9</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+</engineerTo>
+<referedAttribute>2EEFD974-4BB7-1A23-8D92-19E384716024</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B051954A-695C-0ECD-6E39-E99F345014CA" name="Contact PK">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-24 20:31:09 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>62725181-3A3E-2F60-E1BF-C65400632519</attributeRef>
+<attributeRef>262DF286-5546-2CA3-A130-48A063DBB828</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
