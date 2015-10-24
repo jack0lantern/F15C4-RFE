@@ -29,7 +29,7 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="employee_id" id="9FE5FB88-D7D2-D065-107E-1F8C2D6C8452">
+<Attribute name="emp_id" id="9FE5FB88-D7D2-D065-107E-1F8C2D6C8452">
 <createdBy>karthik</createdBy>
 <createdTime>2015-10-23 18:30:21 UTC</createdTime>
 <generatorID>F9DCE3D5-A0B0-DFBE-8468-88C6B7B70A0F</generatorID>
@@ -109,8 +109,6 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>E7610FDC-111E-7AC2-678A-F7486B280C17</attributeRef>
-<attributeRef>9FE5FB88-D7D2-D065-107E-1F8C2D6C8452</attributeRef>
 <attributeRef>E7610FDC-111E-7AC2-678A-F7486B280C17</attributeRef>
 <attributeRef>9FE5FB88-D7D2-D065-107E-1F8C2D6C8452</attributeRef>
 </usedAttributes>

@@ -27,27 +27,16 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="status_id" id="0D678ADE-2673-6BD0-8566-5BEB3E919ED3">
-<createdBy>Jack</createdBy>
-<createdTime>2015-10-21 22:33:04 UTC</createdTime>
-<ownerDesignName>reflog</ownerDesignName>
+<Attribute name="stat_id" id="3EA6246B-933E-14A3-127A-B12A2405071D">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-24 19:16:15 UTC</createdTime>
+<generatorID>ABCD779E-A937-1956-6853-E545478E4B3D</generatorID>
+<ownerDesignName>logical</ownerDesignName>
 <engineerTo>
 <item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="employee_id" id="D695E0F5-D03B-9510-863B-03F14A08ADBC">
-<createdBy>Jack</createdBy>
-<createdTime>2015-10-23 00:29:45 UTC</createdTime>
-<ownerDesignName>reflog</ownerDesignName>
-<engineerTo>
-<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
+<referedAttribute>25885B22-566A-B423-B1EF-E8907F20A94D</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>

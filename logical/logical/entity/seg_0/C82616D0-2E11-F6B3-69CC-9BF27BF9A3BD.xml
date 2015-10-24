@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C82616D0-2E11-F6B3-69CC-9BF27BF9A3BD" name="F15.C4Employee">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C82616D0-2E11-F6B3-69CC-9BF27BF9A3BD" name="F15.C4Emp">
 <createdBy>Jack</createdBy>
 <createdTime>2015-10-19 21:17:06 UTC</createdTime>
 <ownerDesignName>reflog</ownerDesignName>
@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="employee_id" id="2EEFD974-4BB7-1A23-8D92-19E384716024">
+<Attribute name="emp_id" id="2EEFD974-4BB7-1A23-8D92-19E384716024">
 <createdBy>Jack</createdBy>
 <createdTime>2015-10-19 21:18:53 UTC</createdTime>
 <ownerDesignName>reflog</ownerDesignName>
@@ -39,7 +39,7 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="employee_name" id="359AE748-8387-425A-8972-18A61ADDB1C7">
+<Attribute name="emp_name" id="359AE748-8387-425A-8972-18A61ADDB1C7">
 <createdBy>Jack</createdBy>
 <createdTime>2015-10-21 22:55:00 UTC</createdTime>
 <ownerDesignName>reflog</ownerDesignName>
@@ -52,7 +52,7 @@
 <dataTypeSize>255</dataTypeSize>
 <ownDataTypeParameters>255,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="employee_lab" id="BD25184F-4BAD-4EAD-CECC-DC8D9987D502">
+<Attribute name="emp_lab" id="BD25184F-4BAD-4EAD-CECC-DC8D9987D502">
 <createdBy>Jack</createdBy>
 <createdTime>2015-10-21 22:55:20 UTC</createdTime>
 <ownerDesignName>reflog</ownerDesignName>
@@ -66,7 +66,7 @@
 <dataTypeSize>4</dataTypeSize>
 <ownDataTypeParameters>4,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="employee_email" id="8AB710AB-F3BD-6140-8067-0247A5C3A867">
+<Attribute name="emp_email" id="8AB710AB-F3BD-6140-8067-0247A5C3A867">
 <createdBy>Jack</createdBy>
 <createdTime>2015-10-21 22:55:41 UTC</createdTime>
 <ownerDesignName>reflog</ownerDesignName>
@@ -80,7 +80,7 @@
 <dataTypeSize>255</dataTypeSize>
 <ownDataTypeParameters>255,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="employee_office" id="9BCF75FF-C0FE-632E-48FE-F3626237D1D4">
+<Attribute name="emp_office" id="9BCF75FF-C0FE-632E-48FE-F3626237D1D4">
 <createdBy>Jack</createdBy>
 <createdTime>2015-10-21 22:56:26 UTC</createdTime>
 <ownerDesignName>reflog</ownerDesignName>
@@ -94,7 +94,7 @@
 <dataTypeSize>255</dataTypeSize>
 <ownDataTypeParameters>255,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="employee_phone" id="CBDB7294-B5E8-1E59-A424-A52CF9565A4D">
+<Attribute name="emp_phone" id="CBDB7294-B5E8-1E59-A424-A52CF9565A4D">
 <createdBy>Jack</createdBy>
 <createdTime>2015-10-21 22:56:41 UTC</createdTime>
 <ownerDesignName>reflog</ownerDesignName>
@@ -108,7 +108,7 @@
 <dataTypeSize>255</dataTypeSize>
 <ownDataTypeParameters>255,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="status_eff_date" id="9AE4CD3A-581A-21DD-B7BA-A7C019A64610">
+<Attribute name="stat_eff_date" id="9AE4CD3A-581A-21DD-B7BA-A7C019A64610">
 <createdBy>Jack</createdBy>
 <createdTime>2015-10-21 22:56:58 UTC</createdTime>
 <ownerDesignName>reflog</ownerDesignName>
@@ -169,10 +169,10 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="lab_id" id="0B99B120-538E-2932-5BB2-B2F038770D86">
-<createdBy>karthik</createdBy>
-<createdTime>2015-10-23 18:28:17 UTC</createdTime>
-<generatorID>CC9D2F1D-83DC-5710-15B1-00DDF6A2CAD9</generatorID>
+<Attribute name="lab_id" id="0B871ACD-4DFD-3977-F35F-485C4E61F9F0">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-24 18:14:15 UTC</createdTime>
+<generatorID>216209D3-8E93-048F-2DC5-4E88CC9C7F0F</generatorID>
 <ownerDesignName>logical</ownerDesignName>
 <engineerTo>
 <item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>

@@ -4,7 +4,7 @@
 <createdTime>2015-10-19 21:35:24 UTC</createdTime>
 <ownerDesignName>reflog</ownerDesignName>
 <engineerTo>
-<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+<item key="F5956102-9056-101A-6D07-C37EAB75183E" value="true"/>
 </engineerTo>
 <identifying>false</identifying>
 <optionalSource>true</optionalSource>
@@ -16,23 +16,12 @@
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<attribute name="Contact" id="E849176A-E3E6-57C2-25D6-CFA0F160EADA">
-<createdBy>Jack</createdBy>
-<createdTime>2015-10-21 22:36:25 UTC</createdTime>
-<ownerDesignName>reflog</ownerDesignName>
-<engineerTo>
-<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</attribute>
 <attribute name="effective_date" id="CBAFB66D-FA87-98D3-E63F-655B9D0B4BF6">
 <createdBy>Jack</createdBy>
 <createdTime>2015-10-21 22:38:01 UTC</createdTime>
 <ownerDesignName>reflog</ownerDesignName>
 <engineerTo>
-<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+<item key="F5956102-9056-101A-6D07-C37EAB75183E" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -46,7 +35,7 @@
 <createdTime>2015-10-21 22:38:35 UTC</createdTime>
 <ownerDesignName>reflog</ownerDesignName>
 <engineerTo>
-<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+<item key="F5956102-9056-101A-6D07-C37EAB75183E" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -60,7 +49,7 @@
 <createdTime>2015-10-21 22:39:44 UTC</createdTime>
 <ownerDesignName>reflog</ownerDesignName>
 <engineerTo>
-<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+<item key="F5956102-9056-101A-6D07-C37EAB75183E" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -74,13 +63,14 @@
 <createdTime>2015-10-21 22:40:02 UTC</createdTime>
 <ownerDesignName>reflog</ownerDesignName>
 <engineerTo>
-<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+<item key="F5956102-9056-101A-6D07-C37EAB75183E" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
 </attribute>
 </attributes>
 </Relation>

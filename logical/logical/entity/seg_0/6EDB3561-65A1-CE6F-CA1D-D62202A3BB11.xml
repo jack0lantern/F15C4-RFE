@@ -22,7 +22,6 @@
 <engineerTo>
 <item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -44,4 +43,18 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AD8785DC-C1A2-3406-FAB4-9676999ADAFE" name="F15.C4Project PK">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-24 19:15:43 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CB712B0A-BC05-0990-F695-2AFB1419CA73</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

@@ -1,0 +1,162 @@
+-- Table Contact has a compound primary key so no sequence or trigger was created for it.
+DROP SEQUENCE F15C4Comment_seq ; 
+create sequence F15C4Comment_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15C4Comment_PK_trig 
+; 
+
+create or replace trigger F15C4Comment_PK_trig 
+before insert on F15C4Comment
+for each row 
+begin 
+select F15C4Comment_seq.nextval into :new.comment_id from dual; 
+end; 
+/
+
+DROP SEQUENCE F15C4Document_seq ; 
+create sequence F15C4Document_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15C4Document_PK_trig 
+; 
+
+create or replace trigger F15C4Document_PK_trig 
+before insert on F15C4Document
+for each row 
+begin 
+select F15C4Document_seq.nextval into :new.document_id from dual; 
+end; 
+/
+
+DROP SEQUENCE F15C4Emp_seq ; 
+create sequence F15C4Emp_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15C4Emp_PK_trig 
+; 
+
+create or replace trigger F15C4Emp_PK_trig 
+before insert on F15C4Emp
+for each row 
+begin 
+select F15C4Emp_seq.nextval into :new.emp_id from dual; 
+end; 
+/
+
+DROP SEQUENCE F15C4Lab_seq ; 
+create sequence F15C4Lab_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15C4Lab_PK_trig 
+; 
+
+create or replace trigger F15C4Lab_PK_trig 
+before insert on F15C4Lab
+for each row 
+begin 
+select F15C4Lab_seq.nextval into :new.lab_id from dual; 
+end; 
+/
+
+DROP SEQUENCE F15C4Project_seq ; 
+create sequence F15C4Project_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15C4Project_PK_trig 
+; 
+
+create or replace trigger F15C4Project_PK_trig 
+before insert on F15C4Project
+for each row 
+begin 
+select F15C4Project_seq.nextval into :new.project_id from dual; 
+end; 
+/
+
+DROP SEQUENCE F15C4RFE_seq ; 
+create sequence F15C4RFE_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15C4RFE_PK_trig 
+; 
+
+create or replace trigger F15C4RFE_PK_trig 
+before insert on F15C4RFE
+for each row 
+begin 
+select F15C4RFE_seq.nextval into :new.rfe_id from dual; 
+end; 
+/
+
+DROP SEQUENCE F15C4Stat_seq ; 
+create sequence F15C4Stat_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15C4Stat_PK_trig 
+; 
+
+create or replace trigger F15C4Stat_PK_trig 
+before insert on F15C4Stat
+for each row 
+begin 
+select F15C4Stat_seq.nextval into :new.stat_id from dual; 
+end; 
+/
+
+DROP SEQUENCE F15C4Stat_Hist_seq ; 
+create sequence F15C4Stat_Hist_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15C4Stat_Hist_PK_trig 
+; 
+
+create or replace trigger F15C4Stat_Hist_PK_trig 
+before insert on F15C4Stat_Hist
+for each row 
+begin 
+select F15C4Stat_Hist_seq.nextval into :new.stat_hist_id from dual; 
+end; 
+/
+
+-- Table r3 has a compound primary key so no sequence or trigger was created for it.
+DROP INDEX F15C4RFE_rfe_id_FK_0 ;
+CREATE INDEX F15C4RFE_rfe_id_FK_0 ON F15C4Comment(F15C4RFE_rfe_id) ;
+DROP INDEX F15C4RFE_rfe_id_FK_1 ;
+CREATE INDEX F15C4RFE_rfe_id_FK_1 ON F15C4Document(F15C4RFE_rfe_id) ;
+DROP INDEX F15C4Lab_lab_id_FK_2 ;
+CREATE INDEX F15C4Lab_lab_id_FK_2 ON F15C4Emp(F15C4Lab_lab_id) ;
+DROP INDEX F15C4Lab_lab_id_FK_3 ;
+CREATE INDEX F15C4Lab_lab_id_FK_3 ON F15C4Project(F15C4Lab_lab_id) ;
+DROP INDEX F15C4Stat_stat_id_FK_4 ;
+CREATE INDEX F15C4Stat_stat_id_FK_4 ON F15C4RFE(F15C4Stat_stat_id) ;
+DROP INDEX F15C4Emp_emp_id_FK_5 ;
+CREATE INDEX F15C4Emp_emp_id_FK_5 ON F15C4Stat_Hist(F15C4Emp_emp_id) ;
+DROP INDEX F15C4RFE_rfe_id_FK_6 ;
+CREATE INDEX F15C4RFE_rfe_id_FK_6 ON F15C4Stat_Hist(F15C4RFE_rfe_id) ;
+DROP INDEX F15C4Stat_stat_id_FK_7 ;
+CREATE INDEX F15C4Stat_stat_id_FK_7 ON F15C4Stat_Hist(F15C4Stat_stat_id) ;
+DROP INDEX F15C4RFE_rfe_id_FK_8 ;
+CREATE INDEX F15C4RFE_rfe_id_FK_8 ON Contact(F15C4RFE_rfe_id) ;
+DROP INDEX F15C4Emp_emp_id_FK_9 ;
+CREATE INDEX F15C4Emp_emp_id_FK_9 ON r3(F15C4Emp_emp_id) ;
+DROP INDEX F15C4Emp_emp_id_FK_10 ;
+CREATE INDEX F15C4Emp_emp_id_FK_10 ON Contact(F15C4Emp_emp_id) ;
+DROP INDEX F15C4RFE_rfe_id_FK_11 ;
+CREATE INDEX F15C4RFE_rfe_id_FK_11 ON r3(F15C4RFE_rfe_id) ;

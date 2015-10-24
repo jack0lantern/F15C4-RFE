@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6EDB3561-65A1-CE6F-CA1D-D62202A3BB11" name="F15.C4Project">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6EDB3561-65A1-CE6F-CA1D-D62202A3BB11" name="F15C4Project">
 <createdBy>Jack</createdBy>
 <createdTime>2015-10-19 21:19:40 UTC</createdTime>
 <ownerDesignName>reflog</ownerDesignName>
 <engineerTo>
-<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+<item key="89E2A74E-32AF-F4AF-FAEE-0C27E1ACDB13" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,9 +20,8 @@
 <createdTime>2015-10-19 21:19:50 UTC</createdTime>
 <ownerDesignName>reflog</ownerDesignName>
 <engineerTo>
-<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+<item key="89E2A74E-32AF-F4AF-FAEE-0C27E1ACDB13" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -34,7 +33,7 @@
 <generatorID>4640AB03-C03C-5EB5-B4FB-4AD6384FCC0A</generatorID>
 <ownerDesignName>reflog</ownerDesignName>
 <engineerTo>
-<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+<item key="89E2A74E-32AF-F4AF-FAEE-0C27E1ACDB13" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>B6DA3D23-4A13-CCB9-D82F-A28C9AD2B6C9</referedAttribute>
@@ -44,4 +43,18 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="10BE8E4E-09CA-0256-B575-C65441391A43" name="F15.C4Project PK">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-24 19:00:31 UTC</createdTime>
+<ownerDesignName>reflog</ownerDesignName>
+<engineerTo>
+<item key="89E2A74E-32AF-F4AF-FAEE-0C27E1ACDB13" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CB712B0A-BC05-0990-F695-2AFB1419CA73</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

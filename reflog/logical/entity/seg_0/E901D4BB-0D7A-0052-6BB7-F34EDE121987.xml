@@ -1,11 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E901D4BB-0D7A-0052-6BB7-F34EDE121987" name="F15.C4Lab_Employee">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E901D4BB-0D7A-0052-6BB7-F34EDE121987" name="F15C4Lab_Employee">
 <createdBy>Jack</createdBy>
 <createdTime>2015-10-19 21:42:04 UTC</createdTime>
 <ownerDesignName>reflog</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="false"/>
+<item key="89E2A74E-32AF-F4AF-FAEE-0C27E1ACDB13" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -23,7 +22,7 @@
 <generatorID>8074F11E-E9CF-A968-775B-75D2530D3DA2</generatorID>
 <ownerDesignName>reflog</ownerDesignName>
 <engineerTo>
-<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+<item key="89E2A74E-32AF-F4AF-FAEE-0C27E1ACDB13" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>B6DA3D23-4A13-CCB9-D82F-A28C9AD2B6C9</referedAttribute>
@@ -33,16 +32,4 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
-<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="A37EF8D0-B7CE-5633-0C06-CFBF4DDC1349" name="F15.C4Lab_Employee PK">
-<createdBy>Jack</createdBy>
-<createdTime>2015-10-19 21:45:21 UTC</createdTime>
-<ownerDesignName>reflog</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
-<engineerTo>
-<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="false"/>
-</engineerTo>
-<pk>true</pk>
-</identifier>
-</identifiers>
 </Entity>

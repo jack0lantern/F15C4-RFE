@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A670338C-2ACC-DF45-CA12-4591978A54BD" name="F15.C4Status">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A670338C-2ACC-DF45-CA12-4591978A54BD" name="F15.C4Stat">
 <createdBy>Jack</createdBy>
 <createdTime>2015-10-19 21:29:01 UTC</createdTime>
 <ownerDesignName>reflog</ownerDesignName>
@@ -15,20 +15,19 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="status_id" id="25885B22-566A-B423-B1EF-E8907F20A94D">
+<Attribute name="stat_id" id="25885B22-566A-B423-B1EF-E8907F20A94D">
 <createdBy>Jack</createdBy>
 <createdTime>2015-10-19 21:29:12 UTC</createdTime>
 <ownerDesignName>reflog</ownerDesignName>
 <engineerTo>
 <item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="rfe_status" id="0CF41796-1DCD-E7CD-E0E2-315F6C34B0FA">
+<Attribute name="rfe_stat" id="0CF41796-1DCD-E7CD-E0E2-315F6C34B0FA">
 <createdBy>Jack</createdBy>
 <createdTime>2015-10-21 22:42:37 UTC</createdTime>
 <ownerDesignName>reflog</ownerDesignName>
@@ -42,7 +41,7 @@
 <dataTypeSize>255</dataTypeSize>
 <ownDataTypeParameters>255,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="description" id="E3A8311B-6DCC-C6B2-FB3A-10186D1D3AEB">
+<Attribute name="descrip" id="E3A8311B-6DCC-C6B2-FB3A-10186D1D3AEB">
 <createdBy>Jack</createdBy>
 <createdTime>2015-10-21 22:46:46 UTC</createdTime>
 <ownerDesignName>reflog</ownerDesignName>
@@ -57,4 +56,18 @@
 <ownDataTypeParameters>255,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C6E6F34F-5A47-E3A2-5C81-FF3DB1E45E22" name="F15.C4Status PK">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-24 19:15:51 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="A4188969-BB85-458B-4C1E-C2540A0A88D1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>25885B22-566A-B423-B1EF-E8907F20A94D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>
