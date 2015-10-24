@@ -9,7 +9,6 @@ drop view F15C4Requestor_view ;
 create view F15C4Emp_view as
 SELECT 
     emp_id,
-    type,
     active,
     emp_name, 
     emp_lab,
@@ -21,7 +20,7 @@ SELECT
     lab_director_flag,
     exec_director_flag,
     chairperson_flag
-FROM F15C4Emp where type = 'Employee' ;
+FROM F15C4Emp;
 
 create or replace TRIGGER F15C4Emp_trigger
      INSTEAD OF insert ON F15C4Emp_view
@@ -29,7 +28,6 @@ create or replace TRIGGER F15C4Emp_trigger
 BEGIN
     insert into F15C4Emp( 
 		    emp_id,
-		    type,
 		    active,
 		    emp_name, 
 		    emp_lab,
@@ -43,7 +41,6 @@ BEGIN
 		    chairperson_flag)
 		 VALUES ( 
 		:NEW.emp_id,
-		'Employee',
 		:NEW.active,
 		:NEW.emp_name, 
 		:NEW.emp_lab,
@@ -61,7 +58,6 @@ END;
 create view F15C4Chairperson_view as
 SELECT 
     emp_id,
-    type,
     active,
     emp_name, 
     emp_lab,
@@ -73,7 +69,7 @@ SELECT
     lab_director_flag,
     exec_director_flag,
     chairperson_flag
-FROM F15C4Emp where type = 'Chairperson' ;
+FROM F15C4Emp where chairperson_flag = 1;
 
 create or replace TRIGGER F15C4Chairperson_trigger
      INSTEAD OF insert ON F15C4Chairperson_view
@@ -81,7 +77,6 @@ create or replace TRIGGER F15C4Chairperson_trigger
 BEGIN
     insert into F15C4Emp( 
 		    emp_id,
-		    type,
 		    active,
 		    emp_name, 
 		    emp_lab,
@@ -95,7 +90,6 @@ BEGIN
 		    chairperson_flag)
 		 VALUES ( 
 		:NEW.emp_id,
-		'Chairperson',
 		:NEW.active,
 		:NEW.emp_name, 
 		:NEW.emp_lab,
@@ -106,14 +100,13 @@ BEGIN
 		:NEW.system_admin_flag,
 		:NEW.lab_director_flag,
 		:NEW.exec_director_flag,
-		:NEW.chairperson_flag) ;
+		1) ;
 END;
 /
 
 create view F15C4Exec_D_view as
 SELECT 
     emp_id,
-    type,
     active,
     emp_name, 
     emp_lab,
@@ -125,7 +118,7 @@ SELECT
     lab_director_flag,
     exec_director_flag,
     chairperson_flag
-FROM F15C4Emp where type = 'Executive Director' ;
+FROM F15C4Emp where exec_director_flag = 1;
 
 create or replace TRIGGER F15C4Exec_D_trigger
      INSTEAD OF insert ON F15C4Exec_D_view
@@ -133,7 +126,6 @@ create or replace TRIGGER F15C4Exec_D_trigger
 BEGIN
     insert into F15C4Emp( 
 		    emp_id,
-		    type,
 		    active,
 		    emp_name, 
 		    emp_lab,
@@ -147,7 +139,6 @@ BEGIN
 		    chairperson_flag)
 		 VALUES ( 
 		:NEW.emp_id,
-		'Executive Director',
 		:NEW.active,
 		:NEW.emp_name, 
 		:NEW.emp_lab,
@@ -157,7 +148,7 @@ BEGIN
 		:NEW.status_eff_date,
 		:NEW.system_admin_flag,
 		:NEW.lab_director_flag,
-		:NEW.exec_director_flag,
+		1,
 		:NEW.chairperson_flag) ;
 END;
 /
@@ -165,7 +156,6 @@ END;
 create view F15C4Lab_Employee_view as
 SELECT 
     emp_id,
-    type,
     active,
     emp_name, 
     emp_lab,
@@ -178,7 +168,7 @@ SELECT
     exec_director_flag,
     chairperson_flag,
     lab_id
-FROM F15C4Emp where type = 'Lab Employee' ;
+FROM F15C4Emp where lab_id IS NOT NULL;
 
 create or replace TRIGGER F15C4Lab_Employee_trigger
      INSTEAD OF insert ON F15C4Lab_Employee_view
@@ -186,7 +176,6 @@ create or replace TRIGGER F15C4Lab_Employee_trigger
 BEGIN
     insert into F15C4Emp( 
 		    emp_id,
-		    type,
 		    active,
 		    emp_name, 
 		    emp_lab,
@@ -201,62 +190,6 @@ BEGIN
 		    lab_id)
 		 VALUES ( 
 		:NEW.emp_id,
-		'Lab Employee',
-		:NEW.active,
-		:NEW.emp_name, 
-		:NEW.emp_lab,
-		:NEW.emp_email,
-		:NEW.emp_office,
-		:NEW.emp_phone,
-		:NEW.status_eff_date,
-		:NEW.system_admin_flag,
-		:NEW.lab_director_flag,
-		:NEW.exec_director_flag,
-		:NEW.chairperson_flag,
-		:NEW.lab_id) ;
-END;
-/
-
-create view F15C4Requestor_view as
-SELECT 
-    emp_id,
-    type,
-    active,
-    emp_name, 
-    emp_lab,
-    emp_email,
-    emp_office,
-    emp_phone,
-    status_eff_date,
-    system_admin_flag,
-    lab_director_flag,
-    exec_director_flag,
-    chairperson_flag,
-    lab_id
-FROM F15C4Emp where type = 'Requestor';
-
-create or replace TRIGGER F15C4Requestor_trigger
-     INSTEAD OF insert ON F15C4Requestor_view
-     FOR EACH ROW
-BEGIN
-    insert into F15C4Emp( 
-		    emp_id,
-		    type,
-		    active,
-		    emp_name, 
-		    emp_lab,
-		    emp_email,
-		    emp_office,
-		    emp_phone,
-		    status_eff_date,
-		    system_admin_flag,
-		    lab_director_flag,
-		    exec_director_flag,
-		    chairperson_flag,
-		    lab_id)
-		 VALUES ( 
-		:NEW.emp_id,
-		'Requestor',
 		:NEW.active,
 		:NEW.emp_name, 
 		:NEW.emp_lab,
@@ -275,7 +208,6 @@ END;
 create view F15C4Lab_Director_view as
 SELECT 
     emp_id,
-    type,
     active,
     emp_name, 
     emp_lab,
@@ -288,7 +220,7 @@ SELECT
     exec_director_flag,
     chairperson_flag,
     lab_id
-FROM F15C4Emp where type = 'Lab Director';
+FROM F15C4Emp where lab_director_flag = 1;
 
 create or replace TRIGGER F15C4Lab_Director_trigger
      INSTEAD OF insert ON F15C4Lab_Director_view
@@ -296,7 +228,6 @@ create or replace TRIGGER F15C4Lab_Director_trigger
 BEGIN
     insert into F15C4Emp( 
 		    emp_id,
-		    type,
 		    active,
 		    emp_name, 
 		    emp_lab,
@@ -320,7 +251,7 @@ BEGIN
 		:NEW.emp_phone,
 		:NEW.status_eff_date,
 		:NEW.system_admin_flag,
-		:NEW.lab_director_flag,
+		1,
 		:NEW.exec_director_flag,
 		:NEW.chairperson_flag,
 		:NEW.lab_id) ;
@@ -330,7 +261,6 @@ END;
 create view F15C4Lab_SysAd_view as
 SELECT 
     emp_id,
-    type,
     active,
     emp_name, 
     emp_lab,
@@ -343,7 +273,7 @@ SELECT
     exec_director_flag,
     chairperson_flag,
     lab_id
-FROM F15C4Emp where type = 'Lab System Administrator';
+FROM F15C4Emp where system_admin_flag = 1;
 
 create or replace TRIGGER F15C4Lab_SysAd_trigger
      INSTEAD OF insert ON F15C4Lab_SysAd_view
@@ -351,7 +281,6 @@ create or replace TRIGGER F15C4Lab_SysAd_trigger
 BEGIN
     insert into F15C4Emp( 
 		    emp_id,
-		    type,
 		    active,
 		    emp_name, 
 		    emp_lab,
@@ -366,7 +295,6 @@ BEGIN
 		    lab_id)
 		 VALUES ( 
 		:NEW.emp_id,
-		'Lab System Administrator',
 		:NEW.active,
 		:NEW.emp_name, 
 		:NEW.emp_lab,
@@ -374,7 +302,7 @@ BEGIN
 		:NEW.emp_office,
 		:NEW.emp_phone,
 		:NEW.status_eff_date,
-		:NEW.system_admin_flag,
+		1,
 		:NEW.lab_director_flag,
 		:NEW.exec_director_flag,
 		:NEW.chairperson_flag,
