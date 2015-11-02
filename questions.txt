@@ -12,3 +12,5 @@ Details screen: what is the purpose of duplicate?
 Emailing off of submit handled in APEX?
 
 Things of type Date are not dates?
+
+The Requestor may add as many FYI reviewers as they wish.?
