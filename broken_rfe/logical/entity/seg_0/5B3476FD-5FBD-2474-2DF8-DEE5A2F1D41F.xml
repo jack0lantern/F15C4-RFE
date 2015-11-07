@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5B3476FD-5FBD-2474-2DF8-DEE5A2F1D41F" name="F15C4_Task">
+<createdBy>Jack</createdBy>
+<createdTime>2015-11-02 22:43:26 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="task_id" id="1477FA2D-EA28-DF4D-358B-065FEBB4B10B">
+<createdBy>Jack</createdBy>
+<createdTime>2015-11-02 22:43:38 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="eff_date" id="48B9FA48-A499-BB30-2EC9-29B5404B8001">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 00:23:42 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_id" id="B7E743FE-6465-8CBE-7C4D-F3CD5D64316B">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 00:24:30 UTC</createdTime>
+<generatorID>95002EA4-C8C4-9DEC-8A71-3CCD6E3FB0CC</generatorID>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>4ED99A34-EC9E-E485-2066-BE99C4A5532A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="task_abbrev" id="8171F960-16C1-39D3-3B2C-4D7FEDE49870">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 00:24:42 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="task_descrip" id="CBD61631-FAE0-88CA-4765-229D7BC05323">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 00:25:01 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4144A102-93DB-C4CE-E583-8B20022BC283" name="F15C4_task PK">
+<createdBy>Jack</createdBy>
+<createdTime>2015-11-02 22:43:50 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1477FA2D-EA28-DF4D-358B-065FEBB4B10B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

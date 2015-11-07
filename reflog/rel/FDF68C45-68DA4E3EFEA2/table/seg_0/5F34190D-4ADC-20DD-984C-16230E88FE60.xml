@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5F34190D-4ADC-20DD-984C-16230E88FE60" name="r3">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-26 08:54:23 UTC</createdTime>
+<ownerDesignName>reflog</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="F15_C4_RFE_rfe_id" id="2EA9FD64-AEEE-9657-30C4-E7D25BE8328B">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-26 08:54:23 UTC</createdTime>
+<ownerDesignName>reflog</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A4260F13-412A-647A-93B7-577C39877108" referredColumn="08452065-8BD3-7982-2F51-3BE1278811E2"/>
+</associations>
+</Column>
+<Column name="F15_C4_Emp_emp_id" id="E4861DB6-FF58-0419-8DE8-B0A77ADED592">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-26 08:54:23 UTC</createdTime>
+<ownerDesignName>reflog</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1E363CB9-6FDD-92D3-0C80-48C3FEF2885F" referredColumn="F4585291-27D1-EB46-D919-6C9933BB3DE2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D80FF932-B038-AF26-8C1B-C7F039FFBFA4" name="r3_PK">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-26 08:54:23 UTC</createdTime>
+<ownerDesignName>reflog</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2EA9FD64-AEEE-9657-30C4-E7D25BE8328B"/>
+<colUsage columnID="E4861DB6-FF58-0419-8DE8-B0A77ADED592"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="59DD844F-A63B-F0C8-8DE9-A23DB12DAD29" name="FK_ASS_9">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-26 08:54:23 UTC</createdTime>
+<generatorID>FDE237E1-B21F-A0D3-7B78-25C7D9CEC7B4</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2EA9FD64-AEEE-9657-30C4-E7D25BE8328B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9397190C-1740-0300-0164-539A9F6310FE" name="FK_ASS_10">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-26 08:54:23 UTC</createdTime>
+<generatorID>FDE237E1-B21F-A0D3-7B78-25C7D9CEC7B4</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E4861DB6-FF58-0419-8DE8-B0A77ADED592"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="76AB03F4-FB95-8517-6E8C-1408F65C1F23" name="Contact">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-26 08:54:23 UTC</createdTime>
+<ownerDesignName>reflog</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="F15_C4_RFE_rfe_id" id="6F7A4F94-A93C-DBEE-EA9B-1B842FA60D4C">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-26 08:54:23 UTC</createdTime>
+<ownerDesignName>reflog</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F4DECB1D-BFD8-07DC-4F77-AAE6D5EC450D" referredColumn="08452065-8BD3-7982-2F51-3BE1278811E2"/>
+</associations>
+</Column>
+<Column name="F15_C4_Emp_emp_id" id="63F52F49-2F3E-07F2-90CF-9955CC88A0CC">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-26 08:54:23 UTC</createdTime>
+<ownerDesignName>reflog</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8735F5E0-7AB6-343E-68EE-7598863144A3" referredColumn="F4585291-27D1-EB46-D919-6C9933BB3DE2"/>
+</associations>
+</Column>
+<Column name="eff_date" id="2F61B620-4574-99E3-B7C1-873486611BEE">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-26 08:54:23 UTC</createdTime>
+<generatorID>CBAFB66D-FA87-98D3-E63F-655B9D0B4BF6</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+<Column name="comments" id="AADD51CF-20AA-6621-8456-B3BE578DCCBB">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-26 08:54:23 UTC</createdTime>
+<generatorID>D64B1EC8-E755-C52D-75BE-88C6FA9EBC9D</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+<Column name="role_type" id="D065B62D-45E3-16C5-76E2-BC975C54CB40">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-26 08:54:23 UTC</createdTime>
+<generatorID>2222B286-27E8-5006-6BB1-B2F68327D451</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+<Column name="role_descrip" id="645EC5DC-6AC5-7E5A-2390-67F5A3AD7BA3">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-26 08:54:23 UTC</createdTime>
+<generatorID>C635A797-B8B3-DA91-0B58-C480FB2A5C42</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8C914756-CEA8-0E55-3DAB-48A4C51374F2" name="Contact_PK">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-26 08:54:23 UTC</createdTime>
+<ownerDesignName>reflog</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6F7A4F94-A93C-DBEE-EA9B-1B842FA60D4C"/>
+<colUsage columnID="63F52F49-2F3E-07F2-90CF-9955CC88A0CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BC1FCF85-94BD-0A0D-1277-8209AFED5179" name="FK_ASS_1">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-26 08:54:23 UTC</createdTime>
+<generatorID>5AC5379A-650A-DD72-8558-4A011794C650</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6F7A4F94-A93C-DBEE-EA9B-1B842FA60D4C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7D782121-BCDE-16F6-1F0F-9D71FA2DEA3C" name="FK_ASS_2">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-26 08:54:23 UTC</createdTime>
+<generatorID>5AC5379A-650A-DD72-8558-4A011794C650</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="63F52F49-2F3E-07F2-90CF-9955CC88A0CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

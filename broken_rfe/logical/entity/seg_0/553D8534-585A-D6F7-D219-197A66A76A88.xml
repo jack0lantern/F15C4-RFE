@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="553D8534-585A-D6F7-D219-197A66A76A88" name="F15C4_Lab">
+<createdBy>Jack</createdBy>
+<createdTime>2015-11-02 22:14:24 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="lab_id" id="EB4DEDB0-840D-0D3E-6768-74ABD8799C3C">
+<createdBy>Jack</createdBy>
+<createdTime>2015-11-02 22:19:55 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lab_name" id="CF421BBE-22E0-1088-4B25-666E53AD98F0">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 00:17:23 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A5B42F6F-A01D-58D7-A893-F1667D1C2548" name="F15C4_Lab PK">
+<createdBy>Jack</createdBy>
+<createdTime>2015-11-02 22:20:04 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EB4DEDB0-840D-0D3E-6768-74ABD8799C3C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

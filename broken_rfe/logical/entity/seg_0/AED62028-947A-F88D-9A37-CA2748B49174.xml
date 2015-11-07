@@ -1,0 +1,241 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AED62028-947A-F88D-9A37-CA2748B49174" name="F15C4_Emp">
+<createdBy>Jack</createdBy>
+<createdTime>2015-11-02 22:06:30 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="emp_id" id="511831C1-13C5-2EF3-6B80-88F49DA04FEC">
+<createdBy>Jack</createdBy>
+<createdTime>2015-11-02 22:07:29 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="auth_id" id="A0CA549A-6809-9590-3F5F-2870E18A9B41">
+<createdBy>Jack</createdBy>
+<createdTime>2015-11-02 22:17:20 UTC</createdTime>
+<generatorID>FB524F44-F9B2-F6A8-D8E4-76E8F72072EE</generatorID>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>C2502DC7-A256-2B67-D3C3-6FBB83F9E461</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lab_id" id="A957AA0D-5D58-4A24-8E70-40650FBBCEF1">
+<createdBy>Jack</createdBy>
+<createdTime>2015-11-02 22:21:22 UTC</createdTime>
+<generatorID>CF5E33C8-5D09-D21B-C190-5FB5960CC013</generatorID>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>EB4DEDB0-840D-0D3E-6768-74ABD8799C3C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="chair_flag" id="DD4F31B8-F5A4-B54D-55AB-1A11476B0E22">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-06 23:42:47 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="exe_dir_flag" id="69D69663-61C2-3E93-786A-ED2F96BE36C8">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-06 23:43:12 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lab_dir_flag" id="64CECFE6-DFFE-0B01-0AEF-BDF138712B15">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-06 23:43:29 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="last_name" id="147B6EC0-51BE-05F7-41A6-74041D64D822">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-06 23:43:45 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="first_name" id="409462F8-CEB5-21E6-04FF-53E8BA7615A9">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-06 23:44:19 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sys_admin_flag" id="49A527A9-B7D2-CCDF-A951-5381B7B74825">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-06 23:45:06 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="middle_name" id="EEA414CD-0FA7-8688-80E8-6D607931C844">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-06 23:45:29 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="3A447E05-A7C9-8587-99E4-97ADBBB9443B">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-06 23:45:45 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="office" id="677F0F75-20E6-5E75-8F0B-2CFEEA8F2F7A">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-06 23:46:09 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="phone" id="67B95F91-C902-4BDD-F928-38CDFF742E49">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-06 23:46:45 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status" id="B1E22986-9200-8CE9-E739-F0FB15746958">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-06 23:47:04 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="phone_ext" id="CADE181B-3C13-B539-CA1E-79C7382F3D1B">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-06 23:47:36 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="eff_date" id="21E86F08-9281-8E9A-98B7-7173571F2C67">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-06 23:49:59 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FBE9CFF7-EDF9-8C95-2F3F-35B7DDB194B0" name="F15C4_emp PK">
+<createdBy>Jack</createdBy>
+<createdTime>2015-11-02 22:07:44 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>511831C1-13C5-2EF3-6B80-88F49DA04FEC</newElementsIDs>
+<usedAttributes>
+<attributeRef>511831C1-13C5-2EF3-6B80-88F49DA04FEC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

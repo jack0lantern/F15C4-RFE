@@ -4,7 +4,7 @@
 <createdTime>2015-11-02 22:14:24 UTC</createdTime>
 <ownerDesignName>rfelog2</ownerDesignName>
 <engineerTo>
-<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+<item key="EF387562-E0AE-CED6-16A5-BE3F1B6912B5" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,12 +20,25 @@
 <createdTime>2015-11-02 22:19:55 UTC</createdTime>
 <ownerDesignName>rfelog2</ownerDesignName>
 <engineerTo>
-<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+<item key="EF387562-E0AE-CED6-16A5-BE3F1B6912B5" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lab_name" id="47B3C972-8FFA-C661-60EC-49E077F7124B">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 20:43:28 UTC</createdTime>
+<ownerDesignName>rfelog2</ownerDesignName>
+<engineerTo>
+<item key="EF387562-E0AE-CED6-16A5-BE3F1B6912B5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -34,7 +47,7 @@
 <createdTime>2015-11-02 22:20:04 UTC</createdTime>
 <ownerDesignName>rfelog2</ownerDesignName>
 <engineerTo>
-<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+<item key="EF387562-E0AE-CED6-16A5-BE3F1B6912B5" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

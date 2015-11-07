@@ -1,10 +1,11 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="931FB6E1-D366-2C4F-88E5-153D1C55D514" name="F15C4_LabDir">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="931FB6E1-D366-2C4F-88E5-153D1C55D514" name="F15C4_Lab_Dir">
 <createdBy>Jack</createdBy>
 <createdTime>2015-11-02 22:08:45 UTC</createdTime>
 <ownerDesignName>rfelog2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="false"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>

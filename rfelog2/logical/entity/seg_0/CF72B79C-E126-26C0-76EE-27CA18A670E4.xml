@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CF72B79C-E126-26C0-76EE-27CA18A670E4" name="F15C4_rfe">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CF72B79C-E126-26C0-76EE-27CA18A670E4" name="F15C4_Rfe">
 <createdBy>Jack</createdBy>
 <createdTime>2015-11-02 22:23:46 UTC</createdTime>
 <ownerDesignName>rfelog2</ownerDesignName>
 <engineerTo>
-<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+<item key="EF387562-E0AE-CED6-16A5-BE3F1B6912B5" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -15,54 +15,110 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="emp_id" id="9F3B70F1-4CD8-0378-894B-4D033EB75644">
+<Attribute name="rfe_id" id="4ED99A34-EC9E-E485-2066-BE99C4A5532A">
 <createdBy>Jack</createdBy>
-<createdTime>2015-11-02 22:25:38 UTC</createdTime>
-<generatorID>AD547443-C4C9-1939-7725-93937B5B8310</generatorID>
+<createdTime>2015-11-02 22:39:11 UTC</createdTime>
 <ownerDesignName>rfelog2</ownerDesignName>
 <engineerTo>
-<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+<item key="EF387562-E0AE-CED6-16A5-BE3F1B6912B5" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="eff_date" id="C1C20D31-1A15-9F4C-D593-298A7F8CC42B">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 20:50:50 UTC</createdTime>
+<ownerDesignName>rfelog2</ownerDesignName>
+<engineerTo>
+<item key="EF387562-E0AE-CED6-16A5-BE3F1B6912B5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stat_id" id="FFAA1073-4E40-2C40-0E70-3B18D21406EA">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 20:53:53 UTC</createdTime>
+<generatorID>DF177E46-A183-0A84-4CE9-89FA5CF442CC</generatorID>
+<ownerDesignName>rfelog2</ownerDesignName>
+<engineerTo>
+<item key="EF387562-E0AE-CED6-16A5-BE3F1B6912B5" value="true"/>
+</engineerTo>
+<referedAttribute>33E63C9C-ED01-3050-0A75-3D31B576E649</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_id" id="157DF074-DA4E-EA27-1DA0-964F9F8345C9">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 21:06:35 UTC</createdTime>
+<generatorID>368C85CE-3441-A159-6E12-0F0188179131</generatorID>
+<ownerDesignName>rfelog2</ownerDesignName>
+<engineerTo>
+<item key="EF387562-E0AE-CED6-16A5-BE3F1B6912B5" value="true"/>
+</engineerTo>
 <referedAttribute>511831C1-13C5-2EF3-6B80-88F49DA04FEC</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="rfe_id" id="4ED99A34-EC9E-E485-2066-BE99C4A5532A">
-<createdBy>Jack</createdBy>
-<createdTime>2015-11-02 22:39:11 UTC</createdTime>
+<Attribute name="lab_dir_id" id="493BAADC-3B66-ED33-6BC9-65436BF1599B">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 21:06:54 UTC</createdTime>
+<generatorID>C2D54D88-0E46-E0CE-56D4-3B8CDB0DF460</generatorID>
 <ownerDesignName>rfelog2</ownerDesignName>
 <engineerTo>
-<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+<item key="EF387562-E0AE-CED6-16A5-BE3F1B6912B5" value="true"/>
 </engineerTo>
+<referedAttribute>511831C1-13C5-2EF3-6B80-88F49DA04FEC</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Attribute_1" id="9BD3A267-F37E-37CC-CBC7-582066F44BD1">
-<createdBy>Jack</createdBy>
-<createdTime>2015-11-02 22:41:12 UTC</createdTime>
-<generatorID>DF177E46-A183-0A84-4CE9-89FA5CF442CC</generatorID>
+<Attribute name="exe_dir_id" id="20EBA8F3-ED11-FAB9-F186-9C9032029721">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 21:07:01 UTC</createdTime>
+<generatorID>3766FA46-D399-4317-A258-CF5797AB05B9</generatorID>
 <ownerDesignName>rfelog2</ownerDesignName>
 <engineerTo>
-<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+<item key="EF387562-E0AE-CED6-16A5-BE3F1B6912B5" value="true"/>
 </engineerTo>
-<referedAttribute>530DF0D8-8696-7EF3-5860-64954C5F974F</referedAttribute>
-<use>0</use>
+<referedAttribute>511831C1-13C5-2EF3-6B80-88F49DA04FEC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="task_id" id="25F68556-34B0-B2E1-3471-CE5D98183346">
-<createdBy>Jack</createdBy>
-<createdTime>2015-11-02 22:44:09 UTC</createdTime>
-<generatorID>95002EA4-C8C4-9DEC-8A71-3CCD6E3FB0CC</generatorID>
+<Attribute name="sys_admin_id" id="AA037BB9-0750-CED5-F19D-DA925F1328E7">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 21:07:10 UTC</createdTime>
+<generatorID>7BB0A0A7-15B8-840C-4444-A252168834BF</generatorID>
 <ownerDesignName>rfelog2</ownerDesignName>
 <engineerTo>
-<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+<item key="EF387562-E0AE-CED6-16A5-BE3F1B6912B5" value="true"/>
 </engineerTo>
-<referedAttribute>1477FA2D-EA28-DF4D-358B-065FEBB4B10B</referedAttribute>
+<referedAttribute>511831C1-13C5-2EF3-6B80-88F49DA04FEC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="chair_id" id="2B538093-DD39-6E0E-F4F9-8E47BA2B45AF">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 21:50:37 UTC</createdTime>
+<generatorID>AD547443-C4C9-1939-7725-93937B5B8310</generatorID>
+<ownerDesignName>rfelog2</ownerDesignName>
+<engineerTo>
+<item key="EF387562-E0AE-CED6-16A5-BE3F1B6912B5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>511831C1-13C5-2EF3-6B80-88F49DA04FEC</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -75,7 +131,7 @@
 <createdTime>2015-11-02 22:39:21 UTC</createdTime>
 <ownerDesignName>rfelog2</ownerDesignName>
 <engineerTo>
-<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+<item key="EF387562-E0AE-CED6-16A5-BE3F1B6912B5" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

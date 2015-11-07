@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7EF05B12-5E48-FC64-0F2F-C41F94E77EA8" name="F15C4_Doc">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 20:33:33 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="doc_id" id="7E4902A4-69FE-2258-94AE-FEB6E986569E">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 20:33:46 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="doc_file" id="67786663-AC8A-BFE7-01A1-F0EC1EA7945C">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 20:34:01 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DBC29548-A759-2BEA-5828-72F6B3C7FED1" name="F15C4_Doc PK">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 20:33:59 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7E4902A4-69FE-2258-94AE-FEB6E986569E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

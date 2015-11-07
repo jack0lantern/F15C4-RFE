@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B8D87C97-E03F-F080-CECE-C9272609CF6A" name="F15C4_doc">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B8D87C97-E03F-F080-CECE-C9272609CF6A" name="F15C4_Doc">
 <createdBy>Jack</createdBy>
 <createdTime>2015-11-02 22:38:46 UTC</createdTime>
 <ownerDesignName>rfelog2</ownerDesignName>
 <engineerTo>
-<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+<item key="5650D4C5-AAF5-08B0-E23A-EB058FFA9634" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,10 +20,11 @@
 <createdTime>2015-11-02 22:39:00 UTC</createdTime>
 <ownerDesignName>rfelog2</ownerDesignName>
 <engineerTo>
-<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+<item key="5650D4C5-AAF5-08B0-E23A-EB058FFA9634" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="rfe_id" id="F586AB68-F9F7-B819-020A-FD3C99738B1C">
@@ -32,7 +33,7 @@
 <generatorID>A4F38B3F-0608-D472-2CBC-8A29CE88D400</generatorID>
 <ownerDesignName>rfelog2</ownerDesignName>
 <engineerTo>
-<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+<item key="5650D4C5-AAF5-08B0-E23A-EB058FFA9634" value="true"/>
 </engineerTo>
 <referedAttribute>4ED99A34-EC9E-E485-2066-BE99C4A5532A</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -40,5 +41,128 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="emp_id" id="076B40BD-DE34-284E-3E5A-39960691534F">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 21:09:38 UTC</createdTime>
+<generatorID>E997F66E-B65A-9DE9-83A0-32166BC25B73</generatorID>
+<ownerDesignName>rfelog2</ownerDesignName>
+<engineerTo>
+<item key="5650D4C5-AAF5-08B0-E23A-EB058FFA9634" value="true"/>
+</engineerTo>
+<referedAttribute>511831C1-13C5-2EF3-6B80-88F49DA04FEC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="add_date" id="A61C02E7-AB05-8592-7878-5F27911A95EF">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 21:09:53 UTC</createdTime>
+<ownerDesignName>rfelog2</ownerDesignName>
+<engineerTo>
+<item key="5650D4C5-AAF5-08B0-E23A-EB058FFA9634" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="file_blob" id="C88CD38C-3889-1939-0A92-D9F5228CF3C1">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 21:10:34 UTC</createdTime>
+<ownerDesignName>rfelog2</ownerDesignName>
+<engineerTo>
+<item key="5650D4C5-AAF5-08B0-E23A-EB058FFA9634" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="file_name" id="50148E73-38C2-481B-B380-80A9B34315F8">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 22:11:55 UTC</createdTime>
+<ownerDesignName>rfelog2</ownerDesignName>
+<engineerTo>
+<item key="5650D4C5-AAF5-08B0-E23A-EB058FFA9634" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="file_mimetype" id="85A818A0-7B92-2AAF-51D9-28A645EE5135">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 22:11:57 UTC</createdTime>
+<ownerDesignName>rfelog2</ownerDesignName>
+<engineerTo>
+<item key="5650D4C5-AAF5-08B0-E23A-EB058FFA9634" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+<ownDataTypeParameters>512,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="file_charset" id="86CB22F5-F6A2-3F5E-36FE-8A4BC8B9315B">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 22:13:13 UTC</createdTime>
+<ownerDesignName>rfelog2</ownerDesignName>
+<engineerTo>
+<item key="5650D4C5-AAF5-08B0-E23A-EB058FFA9634" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+<ownDataTypeParameters>512,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="file_comments" id="DEDF0858-8997-ED52-11B3-6332C7DD5F1C">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 22:13:41 UTC</createdTime>
+<ownerDesignName>rfelog2</ownerDesignName>
+<engineerTo>
+<item key="5650D4C5-AAF5-08B0-E23A-EB058FFA9634" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tags" id="F950D480-2AFE-571C-030B-BC650FEC4AB1">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 22:14:02 UTC</createdTime>
+<ownerDesignName>rfelog2</ownerDesignName>
+<engineerTo>
+<item key="5650D4C5-AAF5-08B0-E23A-EB058FFA9634" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F0838216-9116-D7BA-4775-4F9E0B61D9DB" name="F15C4_Doc PK">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 20:54:20 UTC</createdTime>
+<ownerDesignName>rfelog2</ownerDesignName>
+<engineerTo>
+<item key="5650D4C5-AAF5-08B0-E23A-EB058FFA9634" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2320A1A2-C623-85B6-A076-FF82E89A974A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

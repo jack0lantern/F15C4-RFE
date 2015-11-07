@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A8B15A42-0FEF-B875-BA31-7632EB6243C6" name="F15_C4_Project">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-26 08:54:23 UTC</createdTime>
+<generatorID>6EDB3561-65A1-CE6F-CA1D-D62202A3BB11</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="project_id" id="791085AC-857F-D6D1-8E0B-A1FD1BAB7C1C">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-26 08:54:23 UTC</createdTime>
+<generatorID>CB712B0A-BC05-0990-F695-2AFB1419CA73</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15_C4_Lab_lab_id" id="137A379E-1970-0027-AE3A-4814EFD8B8E7">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-26 08:54:23 UTC</createdTime>
+<generatorID>8DB54B5A-009C-AE67-7328-FF2B3A9FC728</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7E6515A8-F336-C41A-B891-4F9F7A577B66" referredColumn="1B3ACAC8-3693-CED1-668D-6BF4B0B1152D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="21F4059B-0016-74C8-DAF7-EBEF072F3191" name="F15_C4_Project_PK">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-26 08:54:23 UTC</createdTime>
+<generatorID>10BE8E4E-09CA-0256-B575-C65441391A43</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="791085AC-857F-D6D1-8E0B-A1FD1BAB7C1C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8B293A95-A277-0B2E-441D-ED0C92CA79E0" name="F15_C4_Project_F15_C4_Lab_FK">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-26 08:54:23 UTC</createdTime>
+<generatorID>4640AB03-C03C-5EB5-B4FB-4AD6384FCC0A</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="137A379E-1970-0027-AE3A-4814EFD8B8E7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

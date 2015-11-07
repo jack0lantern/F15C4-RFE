@@ -1,0 +1,194 @@
+DROP SEQUENCE F15C4_Auth_seq ; 
+create sequence F15C4_Auth_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15C4_Auth_PK_trig 
+; 
+
+create or replace trigger F15C4_Auth_PK_trig 
+before insert on F15C4_Auth
+for each row 
+begin 
+select F15C4_Auth_seq.nextval into :new.auth_id from dual; 
+end; 
+/
+
+DROP SEQUENCE F15C4_Doc_seq ; 
+create sequence F15C4_Doc_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15C4_Doc_PK_trig 
+; 
+
+create or replace trigger F15C4_Doc_PK_trig 
+before insert on F15C4_Doc
+for each row 
+begin 
+select F15C4_Doc_seq.nextval into :new.doc_id from dual; 
+end; 
+/
+
+DROP SEQUENCE F15C4_Emp_seq ; 
+create sequence F15C4_Emp_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15C4_Emp_PK_trig 
+; 
+
+create or replace trigger F15C4_Emp_PK_trig 
+before insert on F15C4_Emp
+for each row 
+begin 
+select F15C4_Emp_seq.nextval into :new.emp_id from dual; 
+end; 
+/
+
+-- Table F15C4_Fyi has a compound primary key so no sequence or trigger was created for it.
+DROP SEQUENCE F15C4_Hist_seq ; 
+create sequence F15C4_Hist_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15C4_Hist_PK_trig 
+; 
+
+create or replace trigger F15C4_Hist_PK_trig 
+before insert on F15C4_Hist
+for each row 
+begin 
+select F15C4_Hist_seq.nextval into :new.hist_id from dual; 
+end; 
+/
+
+DROP SEQUENCE F15C4_Lab_seq ; 
+create sequence F15C4_Lab_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15C4_Lab_PK_trig 
+; 
+
+create or replace trigger F15C4_Lab_PK_trig 
+before insert on F15C4_Lab
+for each row 
+begin 
+select F15C4_Lab_seq.nextval into :new.lab_id from dual; 
+end; 
+/
+
+DROP SEQUENCE F15C4_Rfe_seq ; 
+create sequence F15C4_Rfe_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15C4_Rfe_PK_trig 
+; 
+
+create or replace trigger F15C4_Rfe_PK_trig 
+before insert on F15C4_Rfe
+for each row 
+begin 
+select F15C4_Rfe_seq.nextval into :new.rfe_id from dual; 
+end; 
+/
+
+DROP SEQUENCE F15C4_Stat_seq ; 
+create sequence F15C4_Stat_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15C4_Stat_PK_trig 
+; 
+
+create or replace trigger F15C4_Stat_PK_trig 
+before insert on F15C4_Stat
+for each row 
+begin 
+select F15C4_Stat_seq.nextval into :new.stat_id from dual; 
+end; 
+/
+
+DROP SEQUENCE F15C4_Task_seq ; 
+create sequence F15C4_Task_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15C4_Task_PK_trig 
+; 
+
+create or replace trigger F15C4_Task_PK_trig 
+before insert on F15C4_Task
+for each row 
+begin 
+select F15C4_Task_seq.nextval into :new.task_id from dual; 
+end; 
+/
+
+DROP SEQUENCE F15C4_comment_seq ; 
+create sequence F15C4_comment_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15C4_comment_PK_trig 
+; 
+
+create or replace trigger F15C4_comment_PK_trig 
+before insert on F15C4_comment
+for each row 
+begin 
+select F15C4_comment_seq.nextval into :new.comment_id from dual; 
+end; 
+/
+
+DROP INDEX rfe_id_FK_0 ;
+CREATE INDEX rfe_id_FK_0 ON F15C4_Fyi(rfe_id) ;
+DROP INDEX emp_id_FK_1 ;
+CREATE INDEX emp_id_FK_1 ON F15C4_Fyi(emp_id) ;
+DROP INDEX stat_id_FK_2 ;
+CREATE INDEX stat_id_FK_2 ON F15C4_Hist(stat_id) ;
+DROP INDEX emp_id_FK_3 ;
+CREATE INDEX emp_id_FK_3 ON F15C4_Rfe(emp_id) ;
+DROP INDEX lab_dir_id_FK_4 ;
+CREATE INDEX lab_dir_id_FK_4 ON F15C4_Rfe(lab_dir_id) ;
+DROP INDEX exe_dir_id_FK_5 ;
+CREATE INDEX exe_dir_id_FK_5 ON F15C4_Rfe(exe_dir_id) ;
+DROP INDEX sys_admin_id_FK_6 ;
+CREATE INDEX sys_admin_id_FK_6 ON F15C4_Rfe(sys_admin_id) ;
+DROP INDEX emp_id_FK_7 ;
+CREATE INDEX emp_id_FK_7 ON F15C4_Hist(emp_id) ;
+DROP INDEX emp_id_FK_8 ;
+CREATE INDEX emp_id_FK_8 ON F15C4_Doc(emp_id) ;
+DROP INDEX lab_id_FK_9 ;
+CREATE INDEX lab_id_FK_9 ON F15C4_Emp(lab_id) ;
+DROP INDEX emp_id_FK_10 ;
+CREATE INDEX emp_id_FK_10 ON F15C4_Auth(emp_id) ;
+DROP INDEX rfe_id_FK_11 ;
+CREATE INDEX rfe_id_FK_11 ON F15C4_comment(rfe_id) ;
+DROP INDEX rfe_id_FK_12 ;
+CREATE INDEX rfe_id_FK_12 ON F15C4_Task(rfe_id) ;
+DROP INDEX hist_id_FK_13 ;
+CREATE INDEX hist_id_FK_13 ON F15C4_Stat(hist_id) ;
+DROP INDEX auth_id_FK_14 ;
+CREATE INDEX auth_id_FK_14 ON F15C4_Emp(auth_id) ;
+DROP INDEX chair_id_FK_15 ;
+CREATE INDEX chair_id_FK_15 ON F15C4_Rfe(chair_id) ;
+DROP INDEX emp_id_FK_16 ;
+CREATE INDEX emp_id_FK_16 ON F15C4_comment(emp_id) ;
+DROP INDEX rfe_id_FK_17 ;
+CREATE INDEX rfe_id_FK_17 ON F15C4_Doc(rfe_id) ;
+DROP INDEX stat_id_FK_18 ;
+CREATE INDEX stat_id_FK_18 ON F15C4_Rfe(stat_id) ;
+DROP INDEX rfe_id_FK_19 ;
+CREATE INDEX rfe_id_FK_19 ON F15C4_Hist(rfe_id) ;

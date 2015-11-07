@@ -6,8 +6,9 @@
 <engineerTo>
 <item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
 </engineerTo>
+<sourcePk>697A6774-FDE6-664A-1D26-4595878078EF</sourcePk>
 <identifying>false</identifying>
-<optionalSource>true</optionalSource>
+<optionalSource>false</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>145A05E5-C899-059C-0006-72FC0890C19B</sourceEntity>

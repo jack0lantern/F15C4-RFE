@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4EE291B4-A0DC-55D7-7203-03D836509069" name="F15C4_Hist">
+<createdBy>Jack</createdBy>
+<createdTime>2015-11-02 22:40:26 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="hist_id" id="09326292-4963-4245-F3C0-982E2DAC0B61">
+<createdBy>Jack</createdBy>
+<createdTime>2015-11-02 22:40:40 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_id" id="401F6201-F66D-C470-A1B4-781A9437942A">
+<createdBy>Jack</createdBy>
+<createdTime>2015-11-02 22:42:19 UTC</createdTime>
+<generatorID>C41F92B9-3B79-16A9-1195-EF5AE98D2C95</generatorID>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<referedAttribute>4ED99A34-EC9E-E485-2066-BE99C4A5532A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stat_id" id="E6320BDE-6954-437C-C228-61A32D740478">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 00:14:04 UTC</createdTime>
+<generatorID>F0434FF4-6E89-3031-3162-696E76390A2D</generatorID>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>056B9CFA-C9D5-DA90-54A0-717C980D494E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hist_date" id="D0AADBAC-82F6-D650-9783-830D9C83083B">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 00:26:35 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="doc_id" id="F9E5B8BC-96CD-60E9-3DC6-1D7683487551">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 00:46:01 UTC</createdTime>
+<generatorID>AC7D1C65-E553-C914-5C83-2E830F3FDE30</generatorID>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<referedAttribute>2159C9D7-D2BA-C55B-D635-BCD46E9256FE</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_id" id="B756332E-477F-F96A-1078-A51220505415">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 00:56:58 UTC</createdTime>
+<generatorID>AC7D1C65-E553-C914-5C83-2E830F3FDE30</generatorID>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<referedAttribute>511831C1-13C5-2EF3-6B80-88F49DA04FEC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5E8A3044-AE4B-9C04-9377-CAECBF7B9DE6" name="F15C4_Hist PK">
+<createdBy>Jack</createdBy>
+<createdTime>2015-11-02 22:40:55 UTC</createdTime>
+<ownerDesignName>broken_rfe</ownerDesignName>
+<engineerTo>
+<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>09326292-4963-4245-F3C0-982E2DAC0B61</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

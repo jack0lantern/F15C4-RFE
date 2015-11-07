@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FBE3AB58-0540-93C7-93A0-8F7AA1987F4F" name="F15_C4_Document">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-26 08:54:23 UTC</createdTime>
+<generatorID>13AABFB9-6238-3BB5-74C3-99D75AE20FB0</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="document_id" id="0E7B4E26-6A76-58E3-E165-2B216A6E4DC7">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-26 08:54:23 UTC</createdTime>
+<generatorID>00A4CE1F-9CB6-BA44-9F0F-B0D6B758C010</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15_C4_RFE_rfe_id" id="6E664A1D-08A0-400B-C53D-50D5861E4661">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-26 08:54:23 UTC</createdTime>
+<generatorID>2C8B7E96-3522-0D32-A733-ECD85812BB47</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="963BE9C4-C1C3-7579-AB98-298C89426501" referredColumn="08452065-8BD3-7982-2F51-3BE1278811E2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CEA3C3BC-CAF1-0B75-1888-18760ED6AFA5" name="F15_C4_Document_PK">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-26 08:54:23 UTC</createdTime>
+<generatorID>7482E720-1A5C-17B1-B0EF-120174E8CA87</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E7B4E26-6A76-58E3-E165-2B216A6E4DC7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="17DB444E-222E-4DCF-5084-57C74D7CAA7C" name="F15_C4_Document_F15_C4_RFE_FK">
+<createdBy>rosie</createdBy>
+<createdTime>2015-10-26 08:54:23 UTC</createdTime>
+<generatorID>BCFA8023-EA61-3B27-5999-25670978AC56</generatorID>
+<ownerDesignName>reflog</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6E664A1D-08A0-400B-C53D-50D5861E4661"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

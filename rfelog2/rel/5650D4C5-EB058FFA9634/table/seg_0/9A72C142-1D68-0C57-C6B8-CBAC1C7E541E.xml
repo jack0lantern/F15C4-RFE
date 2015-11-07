@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9A72C142-1D68-0C57-C6B8-CBAC1C7E541E" name="F15C4_Task">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 22:20:12 UTC</createdTime>
+<generatorID>5B3476FD-5FBD-2474-2DF8-DEE5A2F1D41F</generatorID>
+<ownerDesignName>rfelog2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="task_id" id="C90DF619-534B-36AE-7B68-01A44A89FA6B">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 22:20:12 UTC</createdTime>
+<generatorID>1477FA2D-EA28-DF4D-358B-065FEBB4B10B</generatorID>
+<ownerDesignName>rfelog2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="eff_date" id="6B1632FD-450C-C450-7B94-891B3760F3C7">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 22:20:12 UTC</createdTime>
+<generatorID>8CB549BB-5BC9-0154-B648-2956F6023B72</generatorID>
+<ownerDesignName>rfelog2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="task_abbrev" id="5907FD80-5D56-1D32-6C57-A46896B49BF7">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 22:20:12 UTC</createdTime>
+<generatorID>624C62BA-65AF-FA1B-9AB9-32F7952B4154</generatorID>
+<ownerDesignName>rfelog2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="task_descrip" id="19F54C1A-E803-8574-CE7B-AEEFCA063BD4">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 22:20:12 UTC</createdTime>
+<generatorID>E7C65EF0-93D0-EC36-3CFF-E9BEA1F54C12</generatorID>
+<ownerDesignName>rfelog2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rfe_id" id="17E651BB-A53E-9554-C139-E228C5F02C5B">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 22:20:12 UTC</createdTime>
+<generatorID>21BC8C64-2CC5-6735-C27E-99CE5D037763</generatorID>
+<ownerDesignName>rfelog2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="16CFF4F6-DC38-10B2-3A6E-6C6478A8C580" referredColumn="0FA7E095-CD05-0463-315C-76418593207D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BAA708CB-3849-6B7F-A6C4-E73EB4732B02" name="F15C4_task_PK">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 22:20:12 UTC</createdTime>
+<generatorID>4144A102-93DB-C4CE-E583-8B20022BC283</generatorID>
+<ownerDesignName>rfelog2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C90DF619-534B-36AE-7B68-01A44A89FA6B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5EF61AFF-B2AC-E61E-CD7C-0C82D0B71223" name="r11">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 22:20:12 UTC</createdTime>
+<generatorID>95002EA4-C8C4-9DEC-8A71-3CCD6E3FB0CC</generatorID>
+<ownerDesignName>rfelog2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17E651BB-A53E-9554-C139-E228C5F02C5B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

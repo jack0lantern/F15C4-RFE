@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="145A05E5-C899-059C-0006-72FC0890C19B" name="F15C4_Status">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="145A05E5-C899-059C-0006-72FC0890C19B" name="F15C4_Stat">
 <createdBy>Jack</createdBy>
 <createdTime>2015-11-02 22:29:20 UTC</createdTime>
 <ownerDesignName>rfelog2</ownerDesignName>
 <engineerTo>
-<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+<item key="EF387562-E0AE-CED6-16A5-BE3F1B6912B5" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -15,13 +15,51 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="hist_id" id="06C332B2-428F-E142-63E2-BD28A45BA78D">
-<createdBy>Jack</createdBy>
-<createdTime>2015-11-02 22:50:23 UTC</createdTime>
+<Attribute name="stat_id" id="33E63C9C-ED01-3050-0A75-3D31B576E649">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 20:53:39 UTC</createdTime>
+<ownerDesignName>rfelog2</ownerDesignName>
+<engineerTo>
+<item key="EF387562-E0AE-CED6-16A5-BE3F1B6912B5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stat_descrip" id="5EADDF00-EE2B-53C2-C122-7B5E027393B4">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 20:56:31 UTC</createdTime>
+<ownerDesignName>rfelog2</ownerDesignName>
+<engineerTo>
+<item key="EF387562-E0AE-CED6-16A5-BE3F1B6912B5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stat_name" id="55F628DF-D934-34E8-DEB3-BEF87D4EE976">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 20:56:53 UTC</createdTime>
+<ownerDesignName>rfelog2</ownerDesignName>
+<engineerTo>
+<item key="EF387562-E0AE-CED6-16A5-BE3F1B6912B5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hist_id" id="7FAA9EEE-AAF1-2225-FFA1-57B12CF7F8F0">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 21:50:37 UTC</createdTime>
 <generatorID>F0434FF4-6E89-3031-3162-696E76390A2D</generatorID>
 <ownerDesignName>rfelog2</ownerDesignName>
 <engineerTo>
-<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="true"/>
+<item key="EF387562-E0AE-CED6-16A5-BE3F1B6912B5" value="true"/>
 </engineerTo>
 <referedAttribute>09326292-4963-4245-F3C0-982E2DAC0B61</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -30,4 +68,18 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="697A6774-FDE6-664A-1D26-4595878078EF" name="F15C4_Status PK">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 20:53:52 UTC</createdTime>
+<ownerDesignName>rfelog2</ownerDesignName>
+<engineerTo>
+<item key="EF387562-E0AE-CED6-16A5-BE3F1B6912B5" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>33E63C9C-ED01-3050-0A75-3D31B576E649</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>
