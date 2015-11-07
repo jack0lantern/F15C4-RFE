@@ -1,0 +1,192 @@
+drop view F15C4_Emp_view ;
+drop view F15C4_Chair_view ;
+drop view F15C4_Exe_Dir_view ;
+drop view F15C4_Sys_Admin_view ;
+drop view F15C4_Lab_Dir_view ;
+
+create view F15C4_Emp_view as
+SELECT * FROM F15C4_Emp;
+
+create view F15C4_Chair_view as
+SELECT * FROM F15C4_Emp where chair_flag = 1;
+
+create or replace TRIGGER F15C4_Chair_trigger
+     INSTEAD OF insert ON F15C4_Chair_view
+     FOR EACH ROW
+BEGIN
+    insert into F15C4_Emp( 
+		emp_id,
+	    auth_id,
+	    lab_id,
+	    last_name,
+	    middle_name,
+	    first_name,
+	    email,
+	    phone,
+	    phone_ext,
+	    office,
+	    status,
+	    emp_eff_date,
+	    chair_flag,
+	    exe_dir_flag,
+	    lab_dir_flag,
+	    sys_admin_flag
+	)
+	VALUES ( 
+		:NEW.emp_id,
+	    :NEW.auth_id,
+	    :NEW.lab_id,
+	    :NEW.last_name,
+	    :NEW.middle_name,
+	    :NEW.first_name,
+	    :NEW.email,
+	    :NEW.phone,
+	    :NEW.phone_ext,
+	    :NEW.office,
+	    :NEW.status,
+	    :NEW.emp_eff_date,
+	    1,
+	    :NEW.exe_dir_flag,
+	    :NEW.lab_dir_flag,
+	    :NEW.sys_admin_flag
+	);
+END;
+/
+
+create view F15C4_Exe_Dir_view as
+SELECT  * FROM F15C4_Emp where exe_dir_flag = 1;
+
+create or replace TRIGGER F15C4_Exe_Dir_trigger
+     INSTEAD OF insert ON F15C4_Exe_Dir_view
+     FOR EACH ROW
+BEGIN
+    insert into F15C4_Emp( 
+		emp_id,
+	    auth_id,
+	    lab_id,
+	    last_name,
+	    middle_name,
+	    first_name,
+	    email,
+	    phone,
+	    phone_ext,
+	    office,
+	    status,
+	    emp_eff_date,
+	    chair_flag,
+	    exe_dir_flag,
+	    lab_dir_flag,
+	    sys_admin_flag
+	)
+	VALUES ( 
+		:NEW.emp_id,
+	    :NEW.auth_id,
+	    :NEW.lab_id,
+	    :NEW.last_name,
+	    :NEW.middle_name,
+	    :NEW.first_name,
+	    :NEW.email,
+	    :NEW.phone,
+	    :NEW.phone_ext,
+	    :NEW.office,
+	    :NEW.status,
+	    :NEW.emp_eff_date,
+	    :NEW.chair_flag,
+	    1,
+	    :NEW.lab_dir_flag,
+	    :NEW.sys_admin_flag
+	);
+END;
+/
+
+create view F15C4_Sys_Admin_view as
+SELECT * FROM F15C4_Emp where sys_admin_flag = 1;
+
+create or replace TRIGGER F15C4_Sys_Admin_trigger
+     INSTEAD OF insert ON F15C4_Sys_Admin_view
+     FOR EACH ROW
+BEGIN
+    insert into F15C4_Emp( 
+		emp_id,
+	    auth_id,
+	    lab_id,
+	    last_name,
+	    middle_name,
+	    first_name,
+	    email,
+	    phone,
+	    phone_ext,
+	    office,
+	    status,
+	    emp_eff_date,
+	    chair_flag,
+	    exe_dir_flag,
+	    lab_dir_flag,
+	    sys_admin_flag
+	)
+	VALUES ( 
+		:NEW.emp_id,
+	    :NEW.auth_id,
+	    :NEW.lab_id,
+	    :NEW.last_name,
+	    :NEW.middle_name,
+	    :NEW.first_name,
+	    :NEW.email,
+	    :NEW.phone,
+	    :NEW.phone_ext,
+	    :NEW.office,
+	    :NEW.status,
+	    :NEW.emp_eff_date,
+	    :NEW.chair_flag,
+	    :NEW.exe_dir_flag,
+	    :NEW.lab_dir_flag,
+	    1
+	);
+END;
+/
+
+create view F15C4_Lab_Dir_view as
+SELECT * FROM F15C4_Emp where lab_dir_flag = 1;
+
+create or replace TRIGGER F15C4_Lab_Dir_trigger
+     INSTEAD OF insert ON F15C4_Lab_Dir_view
+     FOR EACH ROW
+BEGIN
+    insert into F15C4_Emp( 
+		emp_id,
+	    auth_id,
+	    lab_id,
+	    last_name,
+	    middle_name,
+	    first_name,
+	    email,
+	    phone,
+	    phone_ext,
+	    office,
+	    status,
+	    emp_eff_date,
+	    chair_flag,
+	    exe_dir_flag,
+	    lab_dir_flag,
+	    sys_admin_flag
+	)
+	VALUES ( 
+		:NEW.emp_id,
+	    :NEW.auth_id,
+	    :NEW.lab_id,
+	    :NEW.last_name,
+	    :NEW.middle_name,
+	    :NEW.first_name,
+	    :NEW.email,
+	    :NEW.phone,
+	    :NEW.phone_ext,
+	    :NEW.office,
+	    :NEW.status,
+	    :NEW.emp_eff_date,
+	    :NEW.chair_flag,
+	    :NEW.exe_dir_flag,
+	    1,
+	    :NEW.sys_admin_flag
+	);
+END;
+/
