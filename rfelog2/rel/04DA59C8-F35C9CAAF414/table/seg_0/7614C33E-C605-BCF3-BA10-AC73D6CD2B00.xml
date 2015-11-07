@@ -1,0 +1,209 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7614C33E-C605-BCF3-BA10-AC73D6CD2B00" name="F15C4_Rfe">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 23:19:20 UTC</createdTime>
+<generatorID>CF72B79C-E126-26C0-76EE-27CA18A670E4</generatorID>
+<ownerDesignName>rfelog2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="rfe_id" id="0C48210E-F1D3-0A12-96EF-6A8BF9EE2171">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 23:19:20 UTC</createdTime>
+<generatorID>4ED99A34-EC9E-E485-2066-BE99C4A5532A</generatorID>
+<ownerDesignName>rfelog2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="eff_date" id="3544E2FE-5F3F-0E81-027A-924360F831CE">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 23:19:20 UTC</createdTime>
+<generatorID>C1C20D31-1A15-9F4C-D593-298A7F8CC42B</generatorID>
+<ownerDesignName>rfelog2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stat_id" id="B35B7A46-459B-9DF8-7B60-8E3D4FB445AF">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 23:19:20 UTC</createdTime>
+<generatorID>FFAA1073-4E40-2C40-0E70-3B18D21406EA</generatorID>
+<ownerDesignName>rfelog2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="41DF7334-3D1B-68D1-CE88-C525014A4A42" referredColumn="968BD063-A26E-3119-B46C-6A62CAEB2998"/>
+</associations>
+</Column>
+<Column name="emp_id" id="01F85EFB-2CE8-83F4-6F56-6C330886E31D">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 23:19:20 UTC</createdTime>
+<generatorID>157DF074-DA4E-EA27-1DA0-964F9F8345C9</generatorID>
+<ownerDesignName>rfelog2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B39EE8FC-D274-A4BF-74F7-188A2F23FACA" referredColumn="EB1BBDE2-8259-0EFF-1CF7-FEA1ED81CAD2"/>
+</associations>
+</Column>
+<Column name="lab_dir_id" id="A6358A29-1706-A76A-BE71-699D004E373D">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 23:19:20 UTC</createdTime>
+<generatorID>493BAADC-3B66-ED33-6BC9-65436BF1599B</generatorID>
+<ownerDesignName>rfelog2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5EEBDBB7-E935-8FEF-9814-FC93901C22E6" referredColumn="EB1BBDE2-8259-0EFF-1CF7-FEA1ED81CAD2"/>
+</associations>
+</Column>
+<Column name="exe_dir_id" id="B0E6B2B6-AA85-DA94-B153-40A4F1186BD4">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 23:19:20 UTC</createdTime>
+<generatorID>20EBA8F3-ED11-FAB9-F186-9C9032029721</generatorID>
+<ownerDesignName>rfelog2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="71E581B8-3F24-4F3D-4493-24FDF40AA894" referredColumn="EB1BBDE2-8259-0EFF-1CF7-FEA1ED81CAD2"/>
+</associations>
+</Column>
+<Column name="sys_admin_id" id="9A7CCEF8-110E-9368-FA54-CC5B9E66DBF5">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 23:19:20 UTC</createdTime>
+<generatorID>AA037BB9-0750-CED5-F19D-DA925F1328E7</generatorID>
+<ownerDesignName>rfelog2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7505A427-B413-F9A6-5242-806EAFA4306F" referredColumn="EB1BBDE2-8259-0EFF-1CF7-FEA1ED81CAD2"/>
+</associations>
+</Column>
+<Column name="chair_id" id="FA82754D-9D9A-4C3C-D779-383DD8B94E5F">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 23:19:20 UTC</createdTime>
+<generatorID>2B538093-DD39-6E0E-F4F9-8E47BA2B45AF</generatorID>
+<ownerDesignName>rfelog2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="33600E20-8F90-0AE9-6004-04DBAD4C91FD" referredColumn="EB1BBDE2-8259-0EFF-1CF7-FEA1ED81CAD2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="122A9924-C40A-DE2F-6672-F877A5F72B4B" name="F15C4_rfe_PK">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 23:19:20 UTC</createdTime>
+<generatorID>9A78A389-BF34-9FAE-643D-3A0E1C945F11</generatorID>
+<ownerDesignName>rfelog2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0C48210E-F1D3-0A12-96EF-6A8BF9EE2171"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1E1707D6-0025-C133-7FD6-921B7408509C" name="Relation_14">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 23:19:20 UTC</createdTime>
+<generatorID>368C85CE-3441-A159-6E12-0F0188179131</generatorID>
+<ownerDesignName>rfelog2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01F85EFB-2CE8-83F4-6F56-6C330886E31D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D7E925EC-01F0-171B-38F9-73A2A3A4A1B2" name="Relation_16">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 23:19:20 UTC</createdTime>
+<generatorID>C2D54D88-0E46-E0CE-56D4-3B8CDB0DF460</generatorID>
+<ownerDesignName>rfelog2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A6358A29-1706-A76A-BE71-699D004E373D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="265B9966-A3D6-E35E-6984-D4B4FDF87DB6" name="Relation_17">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 23:19:20 UTC</createdTime>
+<generatorID>3766FA46-D399-4317-A258-CF5797AB05B9</generatorID>
+<ownerDesignName>rfelog2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0E6B2B6-AA85-DA94-B153-40A4F1186BD4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1CD2A461-4C96-D786-90BA-8769252F8E31" name="Relation_18">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 23:19:20 UTC</createdTime>
+<generatorID>7BB0A0A7-15B8-840C-4444-A252168834BF</generatorID>
+<ownerDesignName>rfelog2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A7CCEF8-110E-9368-FA54-CC5B9E66DBF5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6A24A4C7-83D6-C5B0-1812-CCAE05A12CBB" name="r4">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 23:19:20 UTC</createdTime>
+<generatorID>AD547443-C4C9-1939-7725-93937B5B8310</generatorID>
+<ownerDesignName>rfelog2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA82754D-9D9A-4C3C-D779-383DD8B94E5F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="911BA45A-1CC2-AE15-AAD3-997EE8401D0F" name="r6">
+<createdBy>rosie</createdBy>
+<createdTime>2015-11-07 23:19:20 UTC</createdTime>
+<generatorID>DF177E46-A183-0A84-4CE9-89FA5CF442CC</generatorID>
+<ownerDesignName>rfelog2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B35B7A46-459B-9DF8-7B60-8E3D4FB445AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
