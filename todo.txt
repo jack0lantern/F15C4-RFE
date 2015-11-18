@@ -1,3 +1,7 @@
+(J) = Jack
+(R) = Rosie
+(K) = Karthik
+
 -Make documents upload work
 
 -"Here is a suggestion for creating an RFE View which can be used for inserting into the RFE table and another table. If you use this, you will need to remove the insert trigger on the RFE table (and from the ddl2 file) and make an Apex Form on the RFE View instead of on the RFE table."
@@ -10,11 +14,46 @@
 
 -Set RFE modification rights according to auth table OR requestor/approver/contact status
 
--Get all fields to show up correctly
+-Make sample data presentable
+	-format phone numbers (bonus)
 
--Do FYI stuff
+EMPLOYEES:
+	-Get all fields to show up correctly
 
--change ddl4 so when you insert to a view, the role is set
+	-change ddl4 so when you insert to a view, the role is set
+
+NEW RFE FORM:
+	-add to rfe fields on rfe form
+
+	-be able to submit comments, documents, and rfe info
+	
+	-be able to add FYI info (by anyone)
+
+	-only show possbile actions for the role of logged in person
+
+RFE REPORT:
+	-get all fields to show up correctly
+
+DETAILED RFE:
+	-get all fields to show up correctly
+
+	-add conditions to approve, edit buttons (R)
+
+	-add option for duplicate (R)
+
+	-Do FYI stuff
+
+APPROVAL:
+	-Hide eff date unless you a exec_dir (R)
+
+	-need to be able to add comment for approve/reject
+
+	-make correct statuses show up for associated roles
+
+EDIT RFE:
+	-be able to add documents and comments
+	
+	-be able to change status from recalled, submitted, or entered
 
 -Move all our stuff to GitHub (last thing to do)
 
