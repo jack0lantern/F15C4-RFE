@@ -10,6 +10,12 @@
 
 -Set RFE modification rights according to auth table OR requestor/approver/contact status
 
+-Get all fields to show up correctly
+
+-Do FYI stuff
+
+-change ddl4 so when you insert to a view, the role is set
+
 -Move all our stuff to GitHub (last thing to do)
 
 -Make part 2 more "imaginative" (not a list of data)
