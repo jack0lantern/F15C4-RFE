@@ -4,3 +4,9 @@
 
 -Make approval system work
 
+-Instead of having flags sys_admin, lab_dir, exec_dir, etc. just have a field since a person can only be one of them, according to piazza
+
+-Decide if comments, tracking comments, and descriptions are different things for rfe, and add columns in appropriate places
+
+
+-Move all our stuff to GitHub (last thing to do)
