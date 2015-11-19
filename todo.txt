@@ -2,6 +2,8 @@
 (R) = Rosie
 (K) = Karthik
 
+* = DONE!
+
 -Make documents upload work
 
 -"Here is a suggestion for creating an RFE View which can be used for inserting into the RFE table and another table. If you use this, you will need to remove the insert trigger on the RFE table (and from the ddl2 file) and make an Apex Form on the RFE View instead of on the RFE table."
@@ -25,7 +27,7 @@ EMPLOYEES:
 NEW RFE FORM:
 	-add to rfe fields on rfe form
 
-	-be able to submit comments, documents, and rfe info
+	-be able to submit comments(J*), documents, and rfe info 
 	
 	-be able to add FYI info (by anyone)
 
@@ -46,12 +48,14 @@ DETAILED RFE:
 APPROVAL:
 	-Hide eff date unless you a exec_dir (R)
 
-	-need to be able to add comment for approve/reject
+*	-need to be able to add comment for approve/reject (J)
 
-	-make correct statuses show up for associated roles
+	-make correct statuses show up for associated roles(J)
+		-look into shared components list of values
 
 EDIT RFE:
-	-be able to add documents and comments
+	-be able to add documents 
+*	-and comments(J)
 	
 	-be able to change status from recalled, submitted, or entered
 
