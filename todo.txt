@@ -28,14 +28,22 @@ EMPLOYEES:
 NEW RFE FORM:
 	-add to rfe fields on rfe form
 
-	-be able to submit comments(J*), documents, and rfe info 
+*	-be able to submit comments (J), 
+	-documents, and 
+	-rfe info 
 	
 	-be able to add FYI info (by anyone)
 
 	-only show possbile actions for the role of logged in person
 
+	-Status should be "Entered" by default and should not have a field?
+
+	-Should change employee records so that they do not have multiple rows (C, Chair is a sys admin and a chairperson)
+
 RFE REPORT:
 	-get all fields to show up correctly
+
+	-find more intuitive way to link to detailed rfe (I dunno if cannata even wants the rfe_id to even show up)
 
 DETAILED RFE:
 	-get all fields to show up correctly
@@ -46,12 +54,16 @@ DETAILED RFE:
 
 	-Do FYI stuff
 
+	-How to display comments??
+
+	-Why search bar? How to design page?
+
 APPROVAL:
-	-Hide eff date unless you a exec_dir (R)
+*	-Hide eff date unless you a exec_dir (K)
 
 *	-need to be able to add comment for approve/reject (J)
 
-	-make correct statuses show up for associated roles(J)
+	-make correct statuses show up for associated roles(K)
 		-look into shared components list of values
 
 EDIT RFE:
@@ -59,6 +71,11 @@ EDIT RFE:
 *	-and comments(J)
 	
 	-be able to change status from recalled, submitted, or entered
+
+LABS:
+	-Hide lab_id?
+
+	-Include Lab_dir name?
 
 -Move all our stuff to GitHub (last thing to do)
 
