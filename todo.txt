@@ -29,7 +29,8 @@ NEW RFE FORM:
 	-add to rfe fields on rfe form
 
 *	-be able to submit comments (J), 
-	-documents, and 
+* kinda	-documents, and (J)
+
 	-rfe info 
 	
 	-be able to add FYI info (by anyone)
@@ -38,7 +39,7 @@ NEW RFE FORM:
 
 	-Status should be "Entered" by default and should not have a field?
 
-	-Should change employee records so that they do not have multiple rows (C, Chair is a sys admin and a chairperson)
+*	-Should change employee records so that they do not have multiple rows (C, Chair is a sys admin and a chairperson) (J)
 
 RFE REPORT:
 	-get all fields to show up correctly
@@ -50,13 +51,11 @@ DETAILED RFE:
 
 	-add conditions to approve, edit buttons (R)
 
-	-add option for duplicate (R)
+*	-add option for duplicate (R)
 
 	-Do FYI stuff
 
 	-How to display comments??
-
-	-Why search bar? How to design page?
 
 APPROVAL:
 *	-Hide eff date unless you a exec_dir (K)
@@ -67,7 +66,7 @@ APPROVAL:
 		-look into shared components list of values
 
 EDIT RFE:
-	-be able to add documents 
+	-be able to add documents(J)
 *	-and comments(J)
 	
 	-be able to change status from recalled, submitted, or entered
