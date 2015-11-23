@@ -21,9 +21,9 @@
 	-format phone numbers (bonus)
 
 EMPLOYEES:
-	-Get all fields to show up correctly
+*	-Get all fields to show up correctly
 
-	-change ddl4 so when you insert to a view, the role is set
+*	-change ddl4 so when you insert to a view, the role is set
 
 NEW RFE FORM:
 	-add to rfe fields on rfe form
@@ -55,7 +55,7 @@ DETAILED RFE:
 
 	-Do FYI stuff
 
-	-How to display comments??
+*	-How to display comments??
 
 APPROVAL:
 *	-Hide eff date unless you a exec_dir (K)

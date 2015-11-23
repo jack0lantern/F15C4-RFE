@@ -3,9 +3,8 @@
 <createdBy>Jack</createdBy>
 <createdTime>2015-11-02 22:09:06 UTC</createdTime>
 <ownerDesignName>rfelog2</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="1DC79A55-6259-D03A-4E62-0AE70B95A65B" value="false"/>
+<item key="CE60C805-6AB1-6784-A7FD-D9A73B0DFAFE" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>

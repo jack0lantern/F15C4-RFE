@@ -1,0 +1,24 @@
+phone number formatting is...ugly
+want but not need
+
+not so much as something we need to do...as much as an excuse not to do it XD
+i don't see the need for a search bar....since the provided one works fine already
+
+blob doesn't work; seems that the input value...is an issue
+v and nv both doesn't work
+
+realized this issue....when we don't change rfe, doc and comment can't be added
+...just separate buttons to add doc and comment only?
+
+conditions for the approve and reject buttons on detailed rfe needs to be fixed
+
+conditions for showing eff date in approve page might need to be fixed
+
+should we keep the emp_id field or change CREATED/UPDATED with the emp_id?
+
+fyi reviewer has yet to be done
+
+
+
+
+

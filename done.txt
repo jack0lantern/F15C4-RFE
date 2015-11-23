@@ -1,0 +1,13 @@
+fixed up all emp related reports and forms....this took wayyyy longer than it should have...
+
+duplicate button and form related seems to work
+
+changed explanation and comment to text areas so you can input more text
+
+trigger to change emp_eff_date on f15c4_emp
+
+edited ddl4
+
+delete page 4-form on doc
+
+delete page 22-status history; really don't need to see them all like this

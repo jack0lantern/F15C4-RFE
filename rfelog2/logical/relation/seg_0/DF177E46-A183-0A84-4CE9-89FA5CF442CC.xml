@@ -3,13 +3,10 @@
 <createdBy>Jack</createdBy>
 <createdTime>2015-11-02 22:41:12 UTC</createdTime>
 <ownerDesignName>rfelog2</ownerDesignName>
-<engineerTo>
-<item key="5BB1FA91-0D9E-07E4-3D4C-14835192074F" value="true"/>
-</engineerTo>
 <sourcePk>697A6774-FDE6-664A-1D26-4595878078EF</sourcePk>
 <identifying>false</identifying>
 <optionalSource>true</optionalSource>
-<optionalTarget>true</optionalTarget>
+<optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>145A05E5-C899-059C-0006-72FC0890C19B</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>

@@ -3,9 +3,6 @@
 <createdBy>Jack</createdBy>
 <createdTime>2015-11-02 22:43:26 UTC</createdTime>
 <ownerDesignName>rfelog2</ownerDesignName>
-<engineerTo>
-<item key="5BB1FA91-0D9E-07E4-3D4C-14835192074F" value="true"/>
-</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -19,9 +16,6 @@
 <createdBy>Jack</createdBy>
 <createdTime>2015-11-02 22:43:38 UTC</createdTime>
 <ownerDesignName>rfelog2</ownerDesignName>
-<engineerTo>
-<item key="5BB1FA91-0D9E-07E4-3D4C-14835192074F" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -31,9 +25,6 @@
 <createdBy>rosie</createdBy>
 <createdTime>2015-11-07 21:03:34 UTC</createdTime>
 <ownerDesignName>rfelog2</ownerDesignName>
-<engineerTo>
-<item key="5BB1FA91-0D9E-07E4-3D4C-14835192074F" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -43,9 +34,6 @@
 <createdBy>rosie</createdBy>
 <createdTime>2015-11-07 21:03:47 UTC</createdTime>
 <ownerDesignName>rfelog2</ownerDesignName>
-<engineerTo>
-<item key="5BB1FA91-0D9E-07E4-3D4C-14835192074F" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -56,29 +44,11 @@
 <createdBy>rosie</createdBy>
 <createdTime>2015-11-07 21:04:13 UTC</createdTime>
 <ownerDesignName>rfelog2</ownerDesignName>
-<engineerTo>
-<item key="5BB1FA91-0D9E-07E4-3D4C-14835192074F" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>4000</dataTypeSize>
 <ownDataTypeParameters>4000,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="rfe_id" id="21BC8C64-2CC5-6735-C27E-99CE5D037763">
-<createdBy>rosie</createdBy>
-<createdTime>2015-11-07 21:08:53 UTC</createdTime>
-<generatorID>95002EA4-C8C4-9DEC-8A71-3CCD6E3FB0CC</generatorID>
-<ownerDesignName>rfelog2</ownerDesignName>
-<engineerTo>
-<item key="5BB1FA91-0D9E-07E4-3D4C-14835192074F" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>4ED99A34-EC9E-E485-2066-BE99C4A5532A</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -86,9 +56,6 @@
 <createdBy>Jack</createdBy>
 <createdTime>2015-11-02 22:43:50 UTC</createdTime>
 <ownerDesignName>rfelog2</ownerDesignName>
-<engineerTo>
-<item key="5BB1FA91-0D9E-07E4-3D4C-14835192074F" value="true"/>
-</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>1477FA2D-EA28-DF4D-358B-065FEBB4B10B</attributeRef>

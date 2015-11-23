@@ -3,15 +3,10 @@
 <createdBy>rosie</createdBy>
 <createdTime>2015-11-07 21:06:54 UTC</createdTime>
 <ownerDesignName>rfelog2</ownerDesignName>
-<engineerTo>
-<item key="5BB1FA91-0D9E-07E4-3D4C-14835192074F" value="true"/>
-</engineerTo>
-<sourceTransferable>false</sourceTransferable>
-<targetTransferable>false</targetTransferable>
 <sourcePk>FBE9CFF7-EDF9-8C95-2F3F-35B7DDB194B0</sourcePk>
 <identifying>false</identifying>
 <optionalSource>true</optionalSource>
-<optionalTarget>true</optionalTarget>
+<optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>AED62028-947A-F88D-9A37-CA2748B49174</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
