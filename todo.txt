@@ -83,3 +83,5 @@ LABS:
 -Move all our stuff to GitHub (last thing to do)
 
 -Make part 2 more "imaginative" (not a list of data)
+
+-Add Rosie as a collaborator on GitHub
