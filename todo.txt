@@ -13,7 +13,7 @@
 -Instead of having flags sys_admin, lab_dir, exec_dir, etc. just have a field since a person can only be one of them, according to piazza
 	-opting to use radio buttons instead of this^, don't have to change conceptual model for now
 
--Decide if comments, tracking comments, and descriptions are different things for rfe, and add columns in appropriate places
+*-Decide if comments, tracking comments, and descriptions are different things for rfe, and add columns in appropriate places
 
 -Set RFE modification rights according to auth table OR requestor/approver/contact status
 
@@ -33,7 +33,7 @@ NEW RFE FORM:
 
 	-rfe info 
 	
-	-be able to add FYI info (by anyone)
+*	-be able to add FYI info (by anyone)
 
 	-only show possbile actions for the role of logged in person
 
@@ -53,9 +53,13 @@ DETAILED RFE:
 
 *	-add option for duplicate (R)
 
-	-Do FYI stuff
+*	-Do FYI stuff
 
 *	-How to display comments??
+
+*	-Add buttons for adding documents,
+*	-Comments,
+*	-and FYI Reviewers
 
 APPROVAL:
 *	-Hide eff date unless you a exec_dir (K)
