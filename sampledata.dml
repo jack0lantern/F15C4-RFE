@@ -1,0 +1,95 @@
+ALTER TABLE F15C4_Fyi DISABLE CONSTRAINT FK_ASS_1;
+ALTER TABLE F15C4_Fyi DISABLE CONSTRAINT FK_ASS_2;
+ALTER TABLE F15C4_Hist DISABLE CONSTRAINT Relation_13;
+ALTER TABLE F15C4_Rfe DISABLE CONSTRAINT Relation_14;
+ALTER TABLE F15C4_Rfe DISABLE CONSTRAINT Relation_16;
+ALTER TABLE F15C4_Rfe DISABLE CONSTRAINT Relation_17;
+ALTER TABLE F15C4_Rfe DISABLE CONSTRAINT Relation_18;
+ALTER TABLE F15C4_Hist DISABLE CONSTRAINT Relation_19;
+ALTER TABLE F15C4_Doc DISABLE CONSTRAINT Relation_20;
+ALTER TABLE F15C4_Emp DISABLE CONSTRAINT Relation_3;
+ALTER TABLE F15C4_Auth DISABLE CONSTRAINT r1;
+ALTER TABLE F15C4_comment DISABLE CONSTRAINT r10;
+ALTER TABLE F15C4_Task DISABLE CONSTRAINT r11;
+ALTER TABLE F15C4_Emp DISABLE CONSTRAINT r1v1 FO;
+ALTER TABLE F15C4_Rfe DISABLE CONSTRAINT r4;
+ALTER TABLE F15C4_comment DISABLE CONSTRAINT r4v1;
+ALTER TABLE F15C4_Doc DISABLE CONSTRAINT r5;
+ALTER TABLE F15C4_Rfe DISABLE CONSTRAINT r6;
+ALTER TABLE F15C4_Hist DISABLE CONSTRAINT r9;
+
+alter trigger F15C4_Auth_PK_trig disable;
+alter trigger F15C4_Emp_PK_trig disable;
+alter trigger F15C4_Hist_PK_trig disable;
+alter trigger F15C4_Lab_PK_trig disable;
+alter trigger F15C4_Rfe_PK_trig disable;
+alter trigger F15C4_Stat_PK_trig disable;
+alter trigger F15C4_Task_PK_trig disable;
+alter trigger F15C4_comment_PK_trig disable;
+
+truncate table F15C4_Stat;
+truncate table F15C4_Hist;
+truncate table F15C4_Comment;
+truncate table F15C4_Rfe;
+truncate table F15C4_Rfe_T;
+truncate table F15C4_Task;
+truncate table F15C4_Emp;
+truncate table F15C4_FYI;
+truncate table F15C4_Auth;
+truncate table F15C4_Lab;
+
+ALTER TABLE F15C4_Fyi ENABLE CONSTRAINT FK_ASS_1;
+ALTER TABLE F15C4_Fyi ENABLE CONSTRAINT FK_ASS_2;
+ALTER TABLE F15C4_Hist ENABLE CONSTRAINT Relation_13;
+ALTER TABLE F15C4_Rfe ENABLE CONSTRAINT Relation_14;
+ALTER TABLE F15C4_Rfe ENABLE CONSTRAINT Relation_16;
+ALTER TABLE F15C4_Rfe ENABLE CONSTRAINT Relation_17;
+ALTER TABLE F15C4_Rfe ENABLE CONSTRAINT Relation_18;
+ALTER TABLE F15C4_Hist ENABLE CONSTRAINT Relation_19;
+ALTER TABLE F15C4_Doc ENABLE CONSTRAINT Relation_20;
+ALTER TABLE F15C4_Emp ENABLE CONSTRAINT Relation_3;
+ALTER TABLE F15C4_Auth ENABLE CONSTRAINT r1;
+ALTER TABLE F15C4_comment ENABLE CONSTRAINT r10;
+ALTER TABLE F15C4_Task ENABLE CONSTRAINT r11;
+ALTER TABLE F15C4_Emp ENABLE CONSTRAINT r1v1 FO;
+ALTER TABLE F15C4_Rfe ENABLE CONSTRAINT r4;
+ALTER TABLE F15C4_comment ENABLE CONSTRAINT r4v1;
+ALTER TABLE F15C4_Doc ENABLE CONSTRAINT r5;
+ALTER TABLE F15C4_Rfe ENABLE CONSTRAINT r6;
+ALTER TABLE F15C4_Hist ENABLE CONSTRAINT r9;
+
+INSERT INTO F15C4_Auth(auth_id, right, emp_id) VALUES (1, 'RW', 1);
+INSERT INTO F15C4_Auth(auth_id, right, emp_id) VALUES (2, 'RW', 2);
+INSERT INTO F15C4_Auth(auth_id, right, emp_id) VALUES (3, 'RW', 3);
+INSERT INTO F15C4_Auth(auth_id, right, emp_id) VALUES (4, 'RW', 4);
+
+
+INSERT INTO F15C4_Lab(lab_id, lab_name) VALUES (1, 'AAAA');
+
+INSERT INTO F15C4_Emp(emp_id, auth_id, lab_id, last_name, middle_name, first_name, email, phone, phone_ext, office, status, emp_eff_date, chair_flag, exe_dir_flag,
+lab_dir_flag, sys_admin_flag) VALUES (1, 1, 1, 'Pear', 'V', 'Channing', 'cpcp@gmail.com', '408102910', '312', 'A', 1, '11/10/2015', 1, 0, 0, 0);
+INSERT INTO F15C4_Emp(emp_id, auth_id, lab_id, last_name, middle_name, first_name, email, phone, phone_ext, office, status, emp_eff_date, chair_flag, exe_dir_flag,
+lab_dir_flag, sys_admin_flag) VALUES (2, 2, 1, 'Suri', 'D', 'Himanshu', 'hsuri@gmail.com', '408102915', '312', 'A', 1, '11/10/2015', 0, 1, 0, 0);
+INSERT INTO F15C4_Emp(emp_id, auth_id, lab_id, last_name, middle_name, first_name, email, phone, phone_ext, office, status, emp_eff_date, chair_flag, exe_dir_flag,
+lab_dir_flag, sys_admin_flag) VALUES (3, 3, 1, 'Boy', 'V', 'Barnacle', 'bbbb@gmail.com', '408102916', '312', 'A', 1, '11/10/2015', 0, 0, 1, 0);
+INSERT INTO F15C4_Emp(emp_id, auth_id, lab_id, last_name, middle_name, first_name, email, phone, phone_ext, office, status, emp_eff_date, chair_flag, exe_dir_flag,
+lab_dir_flag, sys_admin_flag) VALUES (4, 4, 1, 'Jenkins', 'CK', 'Mick', 'mjenkins@gmail.com', '408102919', '312', 'A', 1, '11/10/2015', 0, 0, 0, 1);
+
+INSERT INTO F15C4_STAT(stat_id, stat_descrip, stat_name) VALUES (1, 'The RFE has been approved by the lab director', 'LD Approved');
+
+INSERT INTO F15C4_RFE(rfe_id, eff_date, stat_id, emp_id, lab_dir_id, exe_dir_id, 
+	chair_id, sys_admin_id, explanation) VALUES (1, '11/10/2015', 1, 1, 3, 2, 1, 4, 'This is an RFE explanation.');
+
+INSERT INTO F15C4_FYI(emp_id, rfe_id) VALUES (2, 1);
+
+INSERT INTO F15C4_HIST(hist_id, rfe_id, stat_id, hist_date, emp_id) VALUES (1, 1, 1, '11/10/2015', 2);
+INSERT INTO F15C4_COMMENT(comment_id, emp_id, rfe_id, descrip, entry_date) VALUES (1, 1, 1, 'I like this RFE.', '11/10/2015');
+
+alter trigger F15C4_Auth_PK_trig enable;
+alter trigger F15C4_Emp_PK_trig enable;
+alter trigger F15C4_Hist_PK_trig enable;
+alter trigger F15C4_Lab_PK_trig enable;
+alter trigger F15C4_Rfe_PK_trig enable;
+alter trigger F15C4_Stat_PK_trig enable;
+alter trigger F15C4_Task_PK_trig enable;
+alter trigger F15C4_comment_PK_trig enable;
